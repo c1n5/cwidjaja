@@ -1,0 +1,2216 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8d12fbcdf23f24098fb6a41b88671dda {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_8d12fbcdf23f24098fb6a41b88671dda" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8d12fbcdf23f24098fb6a41b88671dda = L.map(
+                "map_8d12fbcdf23f24098fb6a41b88671dda",
+                {
+                    center: [32.54799999999998, -116.97400000000002],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d8049b60a80963277b85905ed45f1906 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_d8049b60a80963277b85905ed45f1906.addTo(map_8d12fbcdf23f24098fb6a41b88671dda);
+        
+    
+            var marker_cluster_6420cd2c578e39f8de6746555590f0ae = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var marker_90f5ed3d46bc0a7a4d9119047bcda719 = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_087855d20127c934dfc83e88a8200fee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_90f5ed3d46bc0a7a4d9119047bcda719.setIcon(icon_087855d20127c934dfc83e88a8200fee);
+        
+    
+        var popup_54364384a910c515b2c1fad4a1267029 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5e18ad075d2930b2d83273e88dacf240 = $(`<div id="html_5e18ad075d2930b2d83273e88dacf240" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 204578</div>`)[0];
+                popup_54364384a910c515b2c1fad4a1267029.setContent(html_5e18ad075d2930b2d83273e88dacf240);
+            
+        
+
+        marker_90f5ed3d46bc0a7a4d9119047bcda719.bindPopup(popup_54364384a910c515b2c1fad4a1267029)
+        ;
+
+        
+    
+    
+            var marker_86406282027f9892532c384973f52a39 = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_6633b7dcc4769013139a81cd07c54d4b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_86406282027f9892532c384973f52a39.setIcon(icon_6633b7dcc4769013139a81cd07c54d4b);
+        
+    
+        var popup_8305e721a1c496bc2d5ef717a9973a74 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7f480ee4d7b73ab0bac62efa745bea88 = $(`<div id="html_7f480ee4d7b73ab0bac62efa745bea88" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 146456</div>`)[0];
+                popup_8305e721a1c496bc2d5ef717a9973a74.setContent(html_7f480ee4d7b73ab0bac62efa745bea88);
+            
+        
+
+        marker_86406282027f9892532c384973f52a39.bindPopup(popup_8305e721a1c496bc2d5ef717a9973a74)
+        ;
+
+        
+    
+    
+            var marker_d59d1a7c3f74ee4c9258b8e4c6e1cbfb = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_a841cc14ab9fa5d97de9000fbf6cda67 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d59d1a7c3f74ee4c9258b8e4c6e1cbfb.setIcon(icon_a841cc14ab9fa5d97de9000fbf6cda67);
+        
+    
+        var popup_20669e8fac28c6bde79f0c8ff093f1bd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3d415621f22090e97f50521daab90bee = $(`<div id="html_3d415621f22090e97f50521daab90bee" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 168786</div>`)[0];
+                popup_20669e8fac28c6bde79f0c8ff093f1bd.setContent(html_3d415621f22090e97f50521daab90bee);
+            
+        
+
+        marker_d59d1a7c3f74ee4c9258b8e4c6e1cbfb.bindPopup(popup_20669e8fac28c6bde79f0c8ff093f1bd)
+        ;
+
+        
+    
+    
+            var marker_84a59312b737e4987458f220747edea2 = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_73d5ca3730a08e4e617dcb4b1cc896e6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_84a59312b737e4987458f220747edea2.setIcon(icon_73d5ca3730a08e4e617dcb4b1cc896e6);
+        
+    
+        var popup_bc8d9213b2cced4e949d0e33e9e1a7ee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_87586fcc718e659fd7e52f2fae732375 = $(`<div id="html_87586fcc718e659fd7e52f2fae732375" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 167226</div>`)[0];
+                popup_bc8d9213b2cced4e949d0e33e9e1a7ee.setContent(html_87586fcc718e659fd7e52f2fae732375);
+            
+        
+
+        marker_84a59312b737e4987458f220747edea2.bindPopup(popup_bc8d9213b2cced4e949d0e33e9e1a7ee)
+        ;
+
+        
+    
+    
+            var marker_83c9be1580016463d26a201fc8bfbe0b = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_c0e208371ab35796daac00ec4b12a5c2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_83c9be1580016463d26a201fc8bfbe0b.setIcon(icon_c0e208371ab35796daac00ec4b12a5c2);
+        
+    
+        var popup_1789b11ba2ff3d66fe3f805f257881e5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ed62d87d9259c90b5317821c4382aefa = $(`<div id="html_ed62d87d9259c90b5317821c4382aefa" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 228403</div>`)[0];
+                popup_1789b11ba2ff3d66fe3f805f257881e5.setContent(html_ed62d87d9259c90b5317821c4382aefa);
+            
+        
+
+        marker_83c9be1580016463d26a201fc8bfbe0b.bindPopup(popup_1789b11ba2ff3d66fe3f805f257881e5)
+        ;
+
+        
+    
+    
+            var marker_d7983c4c5de034a51e405e7c326eb245 = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_64ae6ab4d87485ab420ba6b7cff120be = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d7983c4c5de034a51e405e7c326eb245.setIcon(icon_64ae6ab4d87485ab420ba6b7cff120be);
+        
+    
+        var popup_d35a65d638628964e788d3b95fadc266 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_026c0df76b2ee03c8f0fa1874f78f4d8 = $(`<div id="html_026c0df76b2ee03c8f0fa1874f78f4d8" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 244063</div>`)[0];
+                popup_d35a65d638628964e788d3b95fadc266.setContent(html_026c0df76b2ee03c8f0fa1874f78f4d8);
+            
+        
+
+        marker_d7983c4c5de034a51e405e7c326eb245.bindPopup(popup_d35a65d638628964e788d3b95fadc266)
+        ;
+
+        
+    
+    
+            var marker_998fe28444fb164f558bb9f9181947ff = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_5c4743722756af62804285a0b00cbe0d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_998fe28444fb164f558bb9f9181947ff.setIcon(icon_5c4743722756af62804285a0b00cbe0d);
+        
+    
+        var popup_5438f71d448a3484228b2208c19a3bf8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6bb81180f6ba7aa4eea0a485da81a647 = $(`<div id="html_6bb81180f6ba7aa4eea0a485da81a647" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 198151</div>`)[0];
+                popup_5438f71d448a3484228b2208c19a3bf8.setContent(html_6bb81180f6ba7aa4eea0a485da81a647);
+            
+        
+
+        marker_998fe28444fb164f558bb9f9181947ff.bindPopup(popup_5438f71d448a3484228b2208c19a3bf8)
+        ;
+
+        
+    
+    
+            var marker_1324fcbafa434ae97c0cb6d6caa1ed55 = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_b1c4328ecf476752af83ff80d6b4c053 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1324fcbafa434ae97c0cb6d6caa1ed55.setIcon(icon_b1c4328ecf476752af83ff80d6b4c053);
+        
+    
+        var popup_00e45fe39e61db89a24c403dac0b5cbf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1aac1a76edd5d0847f47ab706e4f1555 = $(`<div id="html_1aac1a76edd5d0847f47ab706e4f1555" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 92268</div>`)[0];
+                popup_00e45fe39e61db89a24c403dac0b5cbf.setContent(html_1aac1a76edd5d0847f47ab706e4f1555);
+            
+        
+
+        marker_1324fcbafa434ae97c0cb6d6caa1ed55.bindPopup(popup_00e45fe39e61db89a24c403dac0b5cbf)
+        ;
+
+        
+    
+    
+            var marker_70977c845bb2583554dedeccb7ba8928 = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_bcd4132e1766d0ddc50276f2eb8176ee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_70977c845bb2583554dedeccb7ba8928.setIcon(icon_bcd4132e1766d0ddc50276f2eb8176ee);
+        
+    
+        var popup_878f1382d43532c566d672726aae3670 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_886d587984b34b486fc1536884d892e0 = $(`<div id="html_886d587984b34b486fc1536884d892e0" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 206549</div>`)[0];
+                popup_878f1382d43532c566d672726aae3670.setContent(html_886d587984b34b486fc1536884d892e0);
+            
+        
+
+        marker_70977c845bb2583554dedeccb7ba8928.bindPopup(popup_878f1382d43532c566d672726aae3670)
+        ;
+
+        
+    
+    
+            var marker_649731fb50f6e62889a70baaa037c783 = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_21790e88559ce7fac66fd51a74e4bac0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_649731fb50f6e62889a70baaa037c783.setIcon(icon_21790e88559ce7fac66fd51a74e4bac0);
+        
+    
+        var popup_3b6d0f62f8e1238679791c85304575b4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_26a359787ed3503ed2b7bf871f2a10d6 = $(`<div id="html_26a359787ed3503ed2b7bf871f2a10d6" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 168973</div>`)[0];
+                popup_3b6d0f62f8e1238679791c85304575b4.setContent(html_26a359787ed3503ed2b7bf871f2a10d6);
+            
+        
+
+        marker_649731fb50f6e62889a70baaa037c783.bindPopup(popup_3b6d0f62f8e1238679791c85304575b4)
+        ;
+
+        
+    
+    
+            var marker_fe712813dbc2f973c78e40bef350bfd9 = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_2261bb30c23013c2531a88644ebbbaae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fe712813dbc2f973c78e40bef350bfd9.setIcon(icon_2261bb30c23013c2531a88644ebbbaae);
+        
+    
+        var popup_6b7f3d8e16abec96709f3fe6ebfe3d02 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_45122ea59f95f0490a990c84434e0159 = $(`<div id="html_45122ea59f95f0490a990c84434e0159" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 98204</div>`)[0];
+                popup_6b7f3d8e16abec96709f3fe6ebfe3d02.setContent(html_45122ea59f95f0490a990c84434e0159);
+            
+        
+
+        marker_fe712813dbc2f973c78e40bef350bfd9.bindPopup(popup_6b7f3d8e16abec96709f3fe6ebfe3d02)
+        ;
+
+        
+    
+    
+            var marker_5610a8e122db3c4fe77ef6e65e983cec = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_780add6160f15afb5272affc269cab36 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5610a8e122db3c4fe77ef6e65e983cec.setIcon(icon_780add6160f15afb5272affc269cab36);
+        
+    
+        var popup_7b6b8456b0004e5ed1128bf24c93c4ac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b250e943dfec4ed8cc906ce2a04f925e = $(`<div id="html_b250e943dfec4ed8cc906ce2a04f925e" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 189394</div>`)[0];
+                popup_7b6b8456b0004e5ed1128bf24c93c4ac.setContent(html_b250e943dfec4ed8cc906ce2a04f925e);
+            
+        
+
+        marker_5610a8e122db3c4fe77ef6e65e983cec.bindPopup(popup_7b6b8456b0004e5ed1128bf24c93c4ac)
+        ;
+
+        
+    
+    
+            var marker_2c152159ebf43f0a4760223eba0fedac = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_5d03a0e8fe43f7cc2c6be0d666353dc2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2c152159ebf43f0a4760223eba0fedac.setIcon(icon_5d03a0e8fe43f7cc2c6be0d666353dc2);
+        
+    
+        var popup_7edc42e04c8361c57156d1e7493964f5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3781ea6ac2c6661f42708e9453e8fa74 = $(`<div id="html_3781ea6ac2c6661f42708e9453e8fa74" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 175146</div>`)[0];
+                popup_7edc42e04c8361c57156d1e7493964f5.setContent(html_3781ea6ac2c6661f42708e9453e8fa74);
+            
+        
+
+        marker_2c152159ebf43f0a4760223eba0fedac.bindPopup(popup_7edc42e04c8361c57156d1e7493964f5)
+        ;
+
+        
+    
+    
+            var marker_cb2386070fd5ad37842049f718b0ad81 = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_480f34a243b61511fd16985fa9008632 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_cb2386070fd5ad37842049f718b0ad81.setIcon(icon_480f34a243b61511fd16985fa9008632);
+        
+    
+        var popup_336be24c586292318937fb99cea46392 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b1203280edd7907b1e9a060265713f4e = $(`<div id="html_b1203280edd7907b1e9a060265713f4e" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 144384</div>`)[0];
+                popup_336be24c586292318937fb99cea46392.setContent(html_b1203280edd7907b1e9a060265713f4e);
+            
+        
+
+        marker_cb2386070fd5ad37842049f718b0ad81.bindPopup(popup_336be24c586292318937fb99cea46392)
+        ;
+
+        
+    
+    
+            var marker_2dd9570d99b4de947b2b265f7b588375 = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_0af97ac5b8a0284de9e12fc4f3cf060a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2dd9570d99b4de947b2b265f7b588375.setIcon(icon_0af97ac5b8a0284de9e12fc4f3cf060a);
+        
+    
+        var popup_651c6edd1e353385aa03bea163df2454 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_23c951e555e173c518e32159e522b698 = $(`<div id="html_23c951e555e173c518e32159e522b698" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 175002</div>`)[0];
+                popup_651c6edd1e353385aa03bea163df2454.setContent(html_23c951e555e173c518e32159e522b698);
+            
+        
+
+        marker_2dd9570d99b4de947b2b265f7b588375.bindPopup(popup_651c6edd1e353385aa03bea163df2454)
+        ;
+
+        
+    
+    
+            var marker_efe0d906ca0be111c653b151f5d66c98 = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_6ffe34758f6a8b3c9f0d2177fe88c04a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_efe0d906ca0be111c653b151f5d66c98.setIcon(icon_6ffe34758f6a8b3c9f0d2177fe88c04a);
+        
+    
+        var popup_4a9f9b19ec72daef0cef5316a8e0f6ec = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_00d48e8118304d0678d5a5968fdb0efe = $(`<div id="html_00d48e8118304d0678d5a5968fdb0efe" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 156500</div>`)[0];
+                popup_4a9f9b19ec72daef0cef5316a8e0f6ec.setContent(html_00d48e8118304d0678d5a5968fdb0efe);
+            
+        
+
+        marker_efe0d906ca0be111c653b151f5d66c98.bindPopup(popup_4a9f9b19ec72daef0cef5316a8e0f6ec)
+        ;
+
+        
+    
+    
+            var marker_e29165be535f010e8f60b17bcf938cfc = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_0f91316b67cfc700946f3d528c5ff6b1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e29165be535f010e8f60b17bcf938cfc.setIcon(icon_0f91316b67cfc700946f3d528c5ff6b1);
+        
+    
+        var popup_77ac7be0848aa7311fadf166db6dbd98 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_39e28af6b67f24802541fb52d9de587f = $(`<div id="html_39e28af6b67f24802541fb52d9de587f" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 185088</div>`)[0];
+                popup_77ac7be0848aa7311fadf166db6dbd98.setContent(html_39e28af6b67f24802541fb52d9de587f);
+            
+        
+
+        marker_e29165be535f010e8f60b17bcf938cfc.bindPopup(popup_77ac7be0848aa7311fadf166db6dbd98)
+        ;
+
+        
+    
+    
+            var marker_c8aca2511134c99f32a3ca08051dfbe0 = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_8313a7301adf46255f448a2fa75f5f11 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c8aca2511134c99f32a3ca08051dfbe0.setIcon(icon_8313a7301adf46255f448a2fa75f5f11);
+        
+    
+        var popup_5bd527bad9ac6c57a8a9eb0fbe556cc3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c35d807b19154b0761ff76552d0abac1 = $(`<div id="html_c35d807b19154b0761ff76552d0abac1" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 175755</div>`)[0];
+                popup_5bd527bad9ac6c57a8a9eb0fbe556cc3.setContent(html_c35d807b19154b0761ff76552d0abac1);
+            
+        
+
+        marker_c8aca2511134c99f32a3ca08051dfbe0.bindPopup(popup_5bd527bad9ac6c57a8a9eb0fbe556cc3)
+        ;
+
+        
+    
+    
+            var marker_bbbdb9c7335c69265dc5a0df95149490 = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_0118b2a823114d666d8f451c052b9ca1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_bbbdb9c7335c69265dc5a0df95149490.setIcon(icon_0118b2a823114d666d8f451c052b9ca1);
+        
+    
+        var popup_9418ccfa780dbe44104f4b7a44b0b350 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7ff3f0bffbef7e375821b595d33e5ea7 = $(`<div id="html_7ff3f0bffbef7e375821b595d33e5ea7" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 254418</div>`)[0];
+                popup_9418ccfa780dbe44104f4b7a44b0b350.setContent(html_7ff3f0bffbef7e375821b595d33e5ea7);
+            
+        
+
+        marker_bbbdb9c7335c69265dc5a0df95149490.bindPopup(popup_9418ccfa780dbe44104f4b7a44b0b350)
+        ;
+
+        
+    
+    
+            var marker_a425b66d2aeb6ca7ca599a5a8e85d68a = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_ad36a2a9bcc8e01f272b46aae44a90d5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a425b66d2aeb6ca7ca599a5a8e85d68a.setIcon(icon_ad36a2a9bcc8e01f272b46aae44a90d5);
+        
+    
+        var popup_2b133d50c7e6838a06dba5bc63a3ccd5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_58394bd9d40fe367f3705d2ab90321de = $(`<div id="html_58394bd9d40fe367f3705d2ab90321de" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 168793</div>`)[0];
+                popup_2b133d50c7e6838a06dba5bc63a3ccd5.setContent(html_58394bd9d40fe367f3705d2ab90321de);
+            
+        
+
+        marker_a425b66d2aeb6ca7ca599a5a8e85d68a.bindPopup(popup_2b133d50c7e6838a06dba5bc63a3ccd5)
+        ;
+
+        
+    
+    
+            var marker_affabd6e5574f8eeafc8095ca0d71ed1 = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_d79c1b416ca7cdb7511b7022e4f87f21 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_affabd6e5574f8eeafc8095ca0d71ed1.setIcon(icon_d79c1b416ca7cdb7511b7022e4f87f21);
+        
+    
+        var popup_0cfcad61ece6529a4a09913a90ea0ddd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f2af02ab9c9350eb4c1b4942f397d6a9 = $(`<div id="html_f2af02ab9c9350eb4c1b4942f397d6a9" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 71503</div>`)[0];
+                popup_0cfcad61ece6529a4a09913a90ea0ddd.setContent(html_f2af02ab9c9350eb4c1b4942f397d6a9);
+            
+        
+
+        marker_affabd6e5574f8eeafc8095ca0d71ed1.bindPopup(popup_0cfcad61ece6529a4a09913a90ea0ddd)
+        ;
+
+        
+    
+    
+            var marker_6c8f38fe3f67b9533bea792f24ad7bf9 = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_5b0b2d2ee948a1bbad342c55ed029fd1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6c8f38fe3f67b9533bea792f24ad7bf9.setIcon(icon_5b0b2d2ee948a1bbad342c55ed029fd1);
+        
+    
+        var popup_62c94a9089b01b3d6c7210ec92be1f9a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8f51c0b271480226239d3e3ca864c8db = $(`<div id="html_8f51c0b271480226239d3e3ca864c8db" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 71501</div>`)[0];
+                popup_62c94a9089b01b3d6c7210ec92be1f9a.setContent(html_8f51c0b271480226239d3e3ca864c8db);
+            
+        
+
+        marker_6c8f38fe3f67b9533bea792f24ad7bf9.bindPopup(popup_62c94a9089b01b3d6c7210ec92be1f9a)
+        ;
+
+        
+    
+    
+            var marker_55c6b320865f9a15b8332ddac8acb537 = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_279e5d43900924eb52a4356ed5083491 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_55c6b320865f9a15b8332ddac8acb537.setIcon(icon_279e5d43900924eb52a4356ed5083491);
+        
+    
+        var popup_0acc1c0a7dde95be348a511477745ed7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dbf85fe8fe29090e3fc2297cd5a05c39 = $(`<div id="html_dbf85fe8fe29090e3fc2297cd5a05c39" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 178180</div>`)[0];
+                popup_0acc1c0a7dde95be348a511477745ed7.setContent(html_dbf85fe8fe29090e3fc2297cd5a05c39);
+            
+        
+
+        marker_55c6b320865f9a15b8332ddac8acb537.bindPopup(popup_0acc1c0a7dde95be348a511477745ed7)
+        ;
+
+        
+    
+    
+            var marker_fd5affe9cc0805a6ae6564d45747216e = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_ca6353e272e16592fd27348c6591ca3e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fd5affe9cc0805a6ae6564d45747216e.setIcon(icon_ca6353e272e16592fd27348c6591ca3e);
+        
+    
+        var popup_a03b936106130e0f53bc2b4ef07f18d7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b633ebc7f48345309741886aed106b02 = $(`<div id="html_b633ebc7f48345309741886aed106b02" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 57037</div>`)[0];
+                popup_a03b936106130e0f53bc2b4ef07f18d7.setContent(html_b633ebc7f48345309741886aed106b02);
+            
+        
+
+        marker_fd5affe9cc0805a6ae6564d45747216e.bindPopup(popup_a03b936106130e0f53bc2b4ef07f18d7)
+        ;
+
+        
+    
+    
+            var marker_5882e858cd5f233925e339c227ec0329 = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_85a2801fc7a05b3217fe51bdf9798cd7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5882e858cd5f233925e339c227ec0329.setIcon(icon_85a2801fc7a05b3217fe51bdf9798cd7);
+        
+    
+        var popup_f7c347e799035a705970c5990f407cc4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_55aee9e5094d9bb4e96fc3e8dd492e08 = $(`<div id="html_55aee9e5094d9bb4e96fc3e8dd492e08" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 179406</div>`)[0];
+                popup_f7c347e799035a705970c5990f407cc4.setContent(html_55aee9e5094d9bb4e96fc3e8dd492e08);
+            
+        
+
+        marker_5882e858cd5f233925e339c227ec0329.bindPopup(popup_f7c347e799035a705970c5990f407cc4)
+        ;
+
+        
+    
+    
+            var marker_88450575aae69929e45cd7fe0a987a6d = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_3417758f55a0fed424e476466099694b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_88450575aae69929e45cd7fe0a987a6d.setIcon(icon_3417758f55a0fed424e476466099694b);
+        
+    
+        var popup_9ed02c22f0779afcea5f0b3ad0b9f17f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_41df281dfc3ae3876437983258fab4fb = $(`<div id="html_41df281dfc3ae3876437983258fab4fb" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 211353</div>`)[0];
+                popup_9ed02c22f0779afcea5f0b3ad0b9f17f.setContent(html_41df281dfc3ae3876437983258fab4fb);
+            
+        
+
+        marker_88450575aae69929e45cd7fe0a987a6d.bindPopup(popup_9ed02c22f0779afcea5f0b3ad0b9f17f)
+        ;
+
+        
+    
+    
+            var marker_50b6d83f4e2f014178ffef754c74eef0 = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_0acca63fb3bf13697f719802b870ca2a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_50b6d83f4e2f014178ffef754c74eef0.setIcon(icon_0acca63fb3bf13697f719802b870ca2a);
+        
+    
+        var popup_59a8b165a6987f0a53969781c2daa7f3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_19d6676b2f87cefd6ef47690cbe169d6 = $(`<div id="html_19d6676b2f87cefd6ef47690cbe169d6" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 114476</div>`)[0];
+                popup_59a8b165a6987f0a53969781c2daa7f3.setContent(html_19d6676b2f87cefd6ef47690cbe169d6);
+            
+        
+
+        marker_50b6d83f4e2f014178ffef754c74eef0.bindPopup(popup_59a8b165a6987f0a53969781c2daa7f3)
+        ;
+
+        
+    
+    
+            var marker_709049641edec5b77f1b309d9cad8d97 = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_a3cc6572d15251a8432eaf8f49c48cec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_709049641edec5b77f1b309d9cad8d97.setIcon(icon_a3cc6572d15251a8432eaf8f49c48cec);
+        
+    
+        var popup_32f23ea21ca5fe74541c75275749b02f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2da2558fb47fdeeb5bf1dacadb8decaa = $(`<div id="html_2da2558fb47fdeeb5bf1dacadb8decaa" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 84761</div>`)[0];
+                popup_32f23ea21ca5fe74541c75275749b02f.setContent(html_2da2558fb47fdeeb5bf1dacadb8decaa);
+            
+        
+
+        marker_709049641edec5b77f1b309d9cad8d97.bindPopup(popup_32f23ea21ca5fe74541c75275749b02f)
+        ;
+
+        
+    
+    
+            var marker_8ed6933b1592be113f03194be92b46ca = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_26fb0f521d24694a398d810b69ff4aa9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8ed6933b1592be113f03194be92b46ca.setIcon(icon_26fb0f521d24694a398d810b69ff4aa9);
+        
+    
+        var popup_24891d2df5134bd9e35a095787d07544 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_262695b64968bf8c49561c9e883a94d0 = $(`<div id="html_262695b64968bf8c49561c9e883a94d0" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 151651</div>`)[0];
+                popup_24891d2df5134bd9e35a095787d07544.setContent(html_262695b64968bf8c49561c9e883a94d0);
+            
+        
+
+        marker_8ed6933b1592be113f03194be92b46ca.bindPopup(popup_24891d2df5134bd9e35a095787d07544)
+        ;
+
+        
+    
+    
+            var marker_810196d66c74b803a0565827e43779ca = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_c5cf6677234d2362482b236a09debc6a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_810196d66c74b803a0565827e43779ca.setIcon(icon_c5cf6677234d2362482b236a09debc6a);
+        
+    
+        var popup_5f89f48688c42113c8b3166a41267238 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_428536d8ea50da7ef182c4362971c0a8 = $(`<div id="html_428536d8ea50da7ef182c4362971c0a8" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 154690</div>`)[0];
+                popup_5f89f48688c42113c8b3166a41267238.setContent(html_428536d8ea50da7ef182c4362971c0a8);
+            
+        
+
+        marker_810196d66c74b803a0565827e43779ca.bindPopup(popup_5f89f48688c42113c8b3166a41267238)
+        ;
+
+        
+    
+    
+            var marker_4b538eb93e1ec144fdab479293b1c58a = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_7e9667eb7e96feb8f313c71a0c1eec58 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4b538eb93e1ec144fdab479293b1c58a.setIcon(icon_7e9667eb7e96feb8f313c71a0c1eec58);
+        
+    
+        var popup_26b86beca3e27fef0d08f8d5ff3a4e0c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6046d8973cfbf41f7670b9cab24e1053 = $(`<div id="html_6046d8973cfbf41f7670b9cab24e1053" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 166048</div>`)[0];
+                popup_26b86beca3e27fef0d08f8d5ff3a4e0c.setContent(html_6046d8973cfbf41f7670b9cab24e1053);
+            
+        
+
+        marker_4b538eb93e1ec144fdab479293b1c58a.bindPopup(popup_26b86beca3e27fef0d08f8d5ff3a4e0c)
+        ;
+
+        
+    
+    
+            var marker_a597c382fa16199c9e48f4a677e4fda0 = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_73dcb54197f806fc641c1934edb4813d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a597c382fa16199c9e48f4a677e4fda0.setIcon(icon_73dcb54197f806fc641c1934edb4813d);
+        
+    
+        var popup_548f35abbc12841e3794c949d7126998 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f375fcdea7f6232c6a429d45a489870b = $(`<div id="html_f375fcdea7f6232c6a429d45a489870b" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 82119</div>`)[0];
+                popup_548f35abbc12841e3794c949d7126998.setContent(html_f375fcdea7f6232c6a429d45a489870b);
+            
+        
+
+        marker_a597c382fa16199c9e48f4a677e4fda0.bindPopup(popup_548f35abbc12841e3794c949d7126998)
+        ;
+
+        
+    
+    
+            var marker_a97bc770b6d4f6d156b737e9336dfe13 = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_e5b6a843c331232e7dec1acaa4e23613 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a97bc770b6d4f6d156b737e9336dfe13.setIcon(icon_e5b6a843c331232e7dec1acaa4e23613);
+        
+    
+        var popup_1f397238d09672708de07bac38ceba35 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1a9cacba51f812b017bc4edc7d4c15fa = $(`<div id="html_1a9cacba51f812b017bc4edc7d4c15fa" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 105855</div>`)[0];
+                popup_1f397238d09672708de07bac38ceba35.setContent(html_1a9cacba51f812b017bc4edc7d4c15fa);
+            
+        
+
+        marker_a97bc770b6d4f6d156b737e9336dfe13.bindPopup(popup_1f397238d09672708de07bac38ceba35)
+        ;
+
+        
+    
+    
+            var marker_9bd1626509d831d9381f07b4ef610a14 = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_604be39305271f3fe04b00946e16b170 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9bd1626509d831d9381f07b4ef610a14.setIcon(icon_604be39305271f3fe04b00946e16b170);
+        
+    
+        var popup_3cae184f4135d7bb1eb2eae5e1e5316c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_149f67479f1339ab6fcaef4b5b3acbef = $(`<div id="html_149f67479f1339ab6fcaef4b5b3acbef" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 209301</div>`)[0];
+                popup_3cae184f4135d7bb1eb2eae5e1e5316c.setContent(html_149f67479f1339ab6fcaef4b5b3acbef);
+            
+        
+
+        marker_9bd1626509d831d9381f07b4ef610a14.bindPopup(popup_3cae184f4135d7bb1eb2eae5e1e5316c)
+        ;
+
+        
+    
+    
+            var marker_1e53a015e38a18d58b2c2ffeedc48c83 = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_be54f4fa42afd2a2e7f1dacaf8d6c20b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1e53a015e38a18d58b2c2ffeedc48c83.setIcon(icon_be54f4fa42afd2a2e7f1dacaf8d6c20b);
+        
+    
+        var popup_91cd9c1450fdaf5f3541daf3cdb25edd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_33b7d6d1b19fae29ad414c68dcbec8fc = $(`<div id="html_33b7d6d1b19fae29ad414c68dcbec8fc" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 165809</div>`)[0];
+                popup_91cd9c1450fdaf5f3541daf3cdb25edd.setContent(html_33b7d6d1b19fae29ad414c68dcbec8fc);
+            
+        
+
+        marker_1e53a015e38a18d58b2c2ffeedc48c83.bindPopup(popup_91cd9c1450fdaf5f3541daf3cdb25edd)
+        ;
+
+        
+    
+    
+            var marker_29ea8cc46b16b376f6f7c0ead57c6c10 = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_19fe1dd4638c5ab6f9ef1077685f903d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_29ea8cc46b16b376f6f7c0ead57c6c10.setIcon(icon_19fe1dd4638c5ab6f9ef1077685f903d);
+        
+    
+        var popup_c7bc4182ea358c82a2c87d980970bcb5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1534150c6de9aa30b3a313b35df26130 = $(`<div id="html_1534150c6de9aa30b3a313b35df26130" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 185857</div>`)[0];
+                popup_c7bc4182ea358c82a2c87d980970bcb5.setContent(html_1534150c6de9aa30b3a313b35df26130);
+            
+        
+
+        marker_29ea8cc46b16b376f6f7c0ead57c6c10.bindPopup(popup_c7bc4182ea358c82a2c87d980970bcb5)
+        ;
+
+        
+    
+    
+            var marker_02fd02b1a25bd25081c22a1cc9d1e765 = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_7087e04438bc5782808e75727054c523 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_02fd02b1a25bd25081c22a1cc9d1e765.setIcon(icon_7087e04438bc5782808e75727054c523);
+        
+    
+        var popup_a938b075047e652cf2eddfac8b639d96 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6ec39b80517abb76c29e3b24d565cffc = $(`<div id="html_6ec39b80517abb76c29e3b24d565cffc" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 130626</div>`)[0];
+                popup_a938b075047e652cf2eddfac8b639d96.setContent(html_6ec39b80517abb76c29e3b24d565cffc);
+            
+        
+
+        marker_02fd02b1a25bd25081c22a1cc9d1e765.bindPopup(popup_a938b075047e652cf2eddfac8b639d96)
+        ;
+
+        
+    
+    
+            var marker_392420b03ba5fad1493831da0f2a1c6d = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_da1c0d5b3618f5e7c8eac822cdd4cf1b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_392420b03ba5fad1493831da0f2a1c6d.setIcon(icon_da1c0d5b3618f5e7c8eac822cdd4cf1b);
+        
+    
+        var popup_bd9b25bd7c36634c166335290567341c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_579f4111f1fbdc8c6908f9963fd7cdb3 = $(`<div id="html_579f4111f1fbdc8c6908f9963fd7cdb3" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 137351</div>`)[0];
+                popup_bd9b25bd7c36634c166335290567341c.setContent(html_579f4111f1fbdc8c6908f9963fd7cdb3);
+            
+        
+
+        marker_392420b03ba5fad1493831da0f2a1c6d.bindPopup(popup_bd9b25bd7c36634c166335290567341c)
+        ;
+
+        
+    
+    
+            var marker_2ffdb66a6419bf86e6e01af08268a593 = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_3ee0d635d312789404573ac0a4d05e4d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2ffdb66a6419bf86e6e01af08268a593.setIcon(icon_3ee0d635d312789404573ac0a4d05e4d);
+        
+    
+        var popup_3d00a6a2c8f82bfbb2b102df628a45db = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_260670597eb9c241a3a37c6f5463751e = $(`<div id="html_260670597eb9c241a3a37c6f5463751e" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 153201</div>`)[0];
+                popup_3d00a6a2c8f82bfbb2b102df628a45db.setContent(html_260670597eb9c241a3a37c6f5463751e);
+            
+        
+
+        marker_2ffdb66a6419bf86e6e01af08268a593.bindPopup(popup_3d00a6a2c8f82bfbb2b102df628a45db)
+        ;
+
+        
+    
+    
+            var marker_a6e535f1075a01e5ec93a89558f6080f = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_fcfd5e1f0bff84ac617d604480a4a2b1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a6e535f1075a01e5ec93a89558f6080f.setIcon(icon_fcfd5e1f0bff84ac617d604480a4a2b1);
+        
+    
+        var popup_86dcb97f10d6a551c41903e573756ea4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d26d71038cda229c9289687e3195927b = $(`<div id="html_d26d71038cda229c9289687e3195927b" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 71565</div>`)[0];
+                popup_86dcb97f10d6a551c41903e573756ea4.setContent(html_d26d71038cda229c9289687e3195927b);
+            
+        
+
+        marker_a6e535f1075a01e5ec93a89558f6080f.bindPopup(popup_86dcb97f10d6a551c41903e573756ea4)
+        ;
+
+        
+    
+    
+            var marker_7752b044604b8fff2bf7d7c641882834 = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_c472bde6fb0b5f5e125bf02da19505bd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7752b044604b8fff2bf7d7c641882834.setIcon(icon_c472bde6fb0b5f5e125bf02da19505bd);
+        
+    
+        var popup_a1e4647b9cbdd51b022215130851a1b5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_803f3603a02a746240da4b62107890e1 = $(`<div id="html_803f3603a02a746240da4b62107890e1" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 157970</div>`)[0];
+                popup_a1e4647b9cbdd51b022215130851a1b5.setContent(html_803f3603a02a746240da4b62107890e1);
+            
+        
+
+        marker_7752b044604b8fff2bf7d7c641882834.bindPopup(popup_a1e4647b9cbdd51b022215130851a1b5)
+        ;
+
+        
+    
+    
+            var marker_b7ad8574ba02312a74f89d1c99c8dda9 = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_af0d89b8e5c014c8c7efecdc3cbaea86 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b7ad8574ba02312a74f89d1c99c8dda9.setIcon(icon_af0d89b8e5c014c8c7efecdc3cbaea86);
+        
+    
+        var popup_0867ca2e9b73672551886ad8a323685d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_05a2eb77c060a29bf524221a01c104ab = $(`<div id="html_05a2eb77c060a29bf524221a01c104ab" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 196592</div>`)[0];
+                popup_0867ca2e9b73672551886ad8a323685d.setContent(html_05a2eb77c060a29bf524221a01c104ab);
+            
+        
+
+        marker_b7ad8574ba02312a74f89d1c99c8dda9.bindPopup(popup_0867ca2e9b73672551886ad8a323685d)
+        ;
+
+        
+    
+    
+            var marker_6b4444fef64e6cb29a68a0992921ef83 = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_e751a7ab6088352438b68d01ddb53dcd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6b4444fef64e6cb29a68a0992921ef83.setIcon(icon_e751a7ab6088352438b68d01ddb53dcd);
+        
+    
+        var popup_533b3b77c3a49225cc94b111f9b81c98 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6cbbd01b5b3e0ae9a3e4d3225fbd24c1 = $(`<div id="html_6cbbd01b5b3e0ae9a3e4d3225fbd24c1" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 183272</div>`)[0];
+                popup_533b3b77c3a49225cc94b111f9b81c98.setContent(html_6cbbd01b5b3e0ae9a3e4d3225fbd24c1);
+            
+        
+
+        marker_6b4444fef64e6cb29a68a0992921ef83.bindPopup(popup_533b3b77c3a49225cc94b111f9b81c98)
+        ;
+
+        
+    
+    
+            var marker_bac2cb31246cf8a759016a80a1695527 = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_4facf657ccc081a44489d4aa1a31ca8d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_bac2cb31246cf8a759016a80a1695527.setIcon(icon_4facf657ccc081a44489d4aa1a31ca8d);
+        
+    
+        var popup_f16d1a7bb52247175fdb6a6e36926114 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e5d121d4f0c6e4edd1a527df12edd3f6 = $(`<div id="html_e5d121d4f0c6e4edd1a527df12edd3f6" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 209149</div>`)[0];
+                popup_f16d1a7bb52247175fdb6a6e36926114.setContent(html_e5d121d4f0c6e4edd1a527df12edd3f6);
+            
+        
+
+        marker_bac2cb31246cf8a759016a80a1695527.bindPopup(popup_f16d1a7bb52247175fdb6a6e36926114)
+        ;
+
+        
+    
+    
+            var marker_2c53df5f9ccac21367da524c96e735d4 = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_1b419b29aa2e63a45b356ce9d7fa8301 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2c53df5f9ccac21367da524c96e735d4.setIcon(icon_1b419b29aa2e63a45b356ce9d7fa8301);
+        
+    
+        var popup_c3403123012c7eb50587cb1b264e1d5c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9ccc570f3624c19549d0cc4b79f5c28e = $(`<div id="html_9ccc570f3624c19549d0cc4b79f5c28e" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 109723</div>`)[0];
+                popup_c3403123012c7eb50587cb1b264e1d5c.setContent(html_9ccc570f3624c19549d0cc4b79f5c28e);
+            
+        
+
+        marker_2c53df5f9ccac21367da524c96e735d4.bindPopup(popup_c3403123012c7eb50587cb1b264e1d5c)
+        ;
+
+        
+    
+    
+            var marker_9618d267b54f1cf6a8549cd2922ece2b = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_72b37250aa3b1068ab26c9e6257e63b1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9618d267b54f1cf6a8549cd2922ece2b.setIcon(icon_72b37250aa3b1068ab26c9e6257e63b1);
+        
+    
+        var popup_d8efddd4446f2de76a782d2decc87cbd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bb9fb869adb6ff96dbea113c2e04676d = $(`<div id="html_bb9fb869adb6ff96dbea113c2e04676d" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 179451</div>`)[0];
+                popup_d8efddd4446f2de76a782d2decc87cbd.setContent(html_bb9fb869adb6ff96dbea113c2e04676d);
+            
+        
+
+        marker_9618d267b54f1cf6a8549cd2922ece2b.bindPopup(popup_d8efddd4446f2de76a782d2decc87cbd)
+        ;
+
+        
+    
+    
+            var marker_cddaed01be718298db8e869a626fe3a8 = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_064779606f1847cc5819bd05dd7b7a92 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_cddaed01be718298db8e869a626fe3a8.setIcon(icon_064779606f1847cc5819bd05dd7b7a92);
+        
+    
+        var popup_4440258ac02569cdea9490776aaddb89 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c85bf5eb999b0b5aa145bbf461b3f574 = $(`<div id="html_c85bf5eb999b0b5aa145bbf461b3f574" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 131137</div>`)[0];
+                popup_4440258ac02569cdea9490776aaddb89.setContent(html_c85bf5eb999b0b5aa145bbf461b3f574);
+            
+        
+
+        marker_cddaed01be718298db8e869a626fe3a8.bindPopup(popup_4440258ac02569cdea9490776aaddb89)
+        ;
+
+        
+    
+    
+            var marker_530a225c5e7500d1ecb2b8242ef7bc4d = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_023d45deb704826fd5cbf49e828a78de = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_530a225c5e7500d1ecb2b8242ef7bc4d.setIcon(icon_023d45deb704826fd5cbf49e828a78de);
+        
+    
+        var popup_114bf661924c7f0b442dec551b9d90cb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_85d0f4915d5a0aac242e4e0ce7824597 = $(`<div id="html_85d0f4915d5a0aac242e4e0ce7824597" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 99387</div>`)[0];
+                popup_114bf661924c7f0b442dec551b9d90cb.setContent(html_85d0f4915d5a0aac242e4e0ce7824597);
+            
+        
+
+        marker_530a225c5e7500d1ecb2b8242ef7bc4d.bindPopup(popup_114bf661924c7f0b442dec551b9d90cb)
+        ;
+
+        
+    
+    
+            var marker_250dd730bf87ea735d79bcd1c3b89f93 = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_18ff5ed59f8eb653e7503114942cc971 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_250dd730bf87ea735d79bcd1c3b89f93.setIcon(icon_18ff5ed59f8eb653e7503114942cc971);
+        
+    
+        var popup_80c16ec4617fc3e0afb238f093072c2e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ec3fe243c3e175f0c98293a576f4f6e5 = $(`<div id="html_ec3fe243c3e175f0c98293a576f4f6e5" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 113379</div>`)[0];
+                popup_80c16ec4617fc3e0afb238f093072c2e.setContent(html_ec3fe243c3e175f0c98293a576f4f6e5);
+            
+        
+
+        marker_250dd730bf87ea735d79bcd1c3b89f93.bindPopup(popup_80c16ec4617fc3e0afb238f093072c2e)
+        ;
+
+        
+    
+    
+            var marker_739347dd1655bec0e6e45b6689ac35a0 = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_8436950ae6778a06cd740d560920b2fb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_739347dd1655bec0e6e45b6689ac35a0.setIcon(icon_8436950ae6778a06cd740d560920b2fb);
+        
+    
+        var popup_028f4eb30ced071266fd313623d90553 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_876526853b0dd122494c8a3d89840883 = $(`<div id="html_876526853b0dd122494c8a3d89840883" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 121102</div>`)[0];
+                popup_028f4eb30ced071266fd313623d90553.setContent(html_876526853b0dd122494c8a3d89840883);
+            
+        
+
+        marker_739347dd1655bec0e6e45b6689ac35a0.bindPopup(popup_028f4eb30ced071266fd313623d90553)
+        ;
+
+        
+    
+    
+            var marker_887b4f174ef3caf7561362482d8cadd4 = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_dd3fc47584c9ff6844fa3f62f8b67ae7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_887b4f174ef3caf7561362482d8cadd4.setIcon(icon_dd3fc47584c9ff6844fa3f62f8b67ae7);
+        
+    
+        var popup_cf8bd54ffc1f7790357c66f146c7ad11 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_14b9fd74152343e75850fa4e714cf676 = $(`<div id="html_14b9fd74152343e75850fa4e714cf676" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 140336</div>`)[0];
+                popup_cf8bd54ffc1f7790357c66f146c7ad11.setContent(html_14b9fd74152343e75850fa4e714cf676);
+            
+        
+
+        marker_887b4f174ef3caf7561362482d8cadd4.bindPopup(popup_cf8bd54ffc1f7790357c66f146c7ad11)
+        ;
+
+        
+    
+    
+            var marker_39d61929f70d8266850e006e3317df49 = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_11ed1557deb3ccdbd7944eabde2d9c8e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_39d61929f70d8266850e006e3317df49.setIcon(icon_11ed1557deb3ccdbd7944eabde2d9c8e);
+        
+    
+        var popup_430bf3e23ea40665f1137e18fc8d97e4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_58567b0cc1e7389934b997a7eccd1c50 = $(`<div id="html_58567b0cc1e7389934b997a7eccd1c50" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 121176</div>`)[0];
+                popup_430bf3e23ea40665f1137e18fc8d97e4.setContent(html_58567b0cc1e7389934b997a7eccd1c50);
+            
+        
+
+        marker_39d61929f70d8266850e006e3317df49.bindPopup(popup_430bf3e23ea40665f1137e18fc8d97e4)
+        ;
+
+        
+    
+    
+            var marker_09a973fcf29cbd691fdc6d8414482675 = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_b0885563d8536e917dda3e6d0f4553f3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_09a973fcf29cbd691fdc6d8414482675.setIcon(icon_b0885563d8536e917dda3e6d0f4553f3);
+        
+    
+        var popup_450fb8562ea34fa8fa9e0363f249274c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_054232164f0d36ca399bbc83fcd57262 = $(`<div id="html_054232164f0d36ca399bbc83fcd57262" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 137378</div>`)[0];
+                popup_450fb8562ea34fa8fa9e0363f249274c.setContent(html_054232164f0d36ca399bbc83fcd57262);
+            
+        
+
+        marker_09a973fcf29cbd691fdc6d8414482675.bindPopup(popup_450fb8562ea34fa8fa9e0363f249274c)
+        ;
+
+        
+    
+    
+            var marker_2247e76b580273b1417e477eb3710a34 = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_6ee454b7888b03975de934a34bf41172 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2247e76b580273b1417e477eb3710a34.setIcon(icon_6ee454b7888b03975de934a34bf41172);
+        
+    
+        var popup_59960800efbb22e23a3d5854a22442cd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9d42451c9e386fc0322dc9d66f188c5f = $(`<div id="html_9d42451c9e386fc0322dc9d66f188c5f" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 127902</div>`)[0];
+                popup_59960800efbb22e23a3d5854a22442cd.setContent(html_9d42451c9e386fc0322dc9d66f188c5f);
+            
+        
+
+        marker_2247e76b580273b1417e477eb3710a34.bindPopup(popup_59960800efbb22e23a3d5854a22442cd)
+        ;
+
+        
+    
+    
+            var marker_101c3c338f2a038283c26134312a9ff4 = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_2957e8fabc60e06d3d64c9ce9fd846bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_101c3c338f2a038283c26134312a9ff4.setIcon(icon_2957e8fabc60e06d3d64c9ce9fd846bb);
+        
+    
+        var popup_7e47173ef846aced24420ea6a0996f5c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_61e355b0942dcbb1ac230c77192dbb31 = $(`<div id="html_61e355b0942dcbb1ac230c77192dbb31" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 37952</div>`)[0];
+                popup_7e47173ef846aced24420ea6a0996f5c.setContent(html_61e355b0942dcbb1ac230c77192dbb31);
+            
+        
+
+        marker_101c3c338f2a038283c26134312a9ff4.bindPopup(popup_7e47173ef846aced24420ea6a0996f5c)
+        ;
+
+        
+    
+    
+            var marker_4ab023be32f9a36482c9408a2514fd93 = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_74c2df7c744c22473ba5100c3bfd48e5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4ab023be32f9a36482c9408a2514fd93.setIcon(icon_74c2df7c744c22473ba5100c3bfd48e5);
+        
+    
+        var popup_7bbdc1a8623eb057175055e14934d2c0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a42babcabf0bf795ce41e2b249fb7fc3 = $(`<div id="html_a42babcabf0bf795ce41e2b249fb7fc3" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 98519</div>`)[0];
+                popup_7bbdc1a8623eb057175055e14934d2c0.setContent(html_a42babcabf0bf795ce41e2b249fb7fc3);
+            
+        
+
+        marker_4ab023be32f9a36482c9408a2514fd93.bindPopup(popup_7bbdc1a8623eb057175055e14934d2c0)
+        ;
+
+        
+    
+    
+            var marker_d509761d07adc999414ee55cab86b536 = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_652cd97be7c022a0f7394a67c9f8ab48 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d509761d07adc999414ee55cab86b536.setIcon(icon_652cd97be7c022a0f7394a67c9f8ab48);
+        
+    
+        var popup_4eb4d4dd3f847a250359204b7b2370d6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_19b31e6270e5c175f1866e41fda1c2a2 = $(`<div id="html_19b31e6270e5c175f1866e41fda1c2a2" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 93542</div>`)[0];
+                popup_4eb4d4dd3f847a250359204b7b2370d6.setContent(html_19b31e6270e5c175f1866e41fda1c2a2);
+            
+        
+
+        marker_d509761d07adc999414ee55cab86b536.bindPopup(popup_4eb4d4dd3f847a250359204b7b2370d6)
+        ;
+
+        
+    
+    
+            var marker_71cf5984f8583e45f9f7645707ec8bf9 = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_a59fd467f9588cf69cf34f19218e09ad = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_71cf5984f8583e45f9f7645707ec8bf9.setIcon(icon_a59fd467f9588cf69cf34f19218e09ad);
+        
+    
+        var popup_075956ffdb6a7738251b6ba2c34c7b73 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b26844af1c8dd3f2800f34b9713b12fc = $(`<div id="html_b26844af1c8dd3f2800f34b9713b12fc" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 106975</div>`)[0];
+                popup_075956ffdb6a7738251b6ba2c34c7b73.setContent(html_b26844af1c8dd3f2800f34b9713b12fc);
+            
+        
+
+        marker_71cf5984f8583e45f9f7645707ec8bf9.bindPopup(popup_075956ffdb6a7738251b6ba2c34c7b73)
+        ;
+
+        
+    
+    
+            var marker_49dfd8902b3c92904ed4bc8c3feff205 = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_2e7bf7fcc5f6ca54e7090b9b09d02637 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_49dfd8902b3c92904ed4bc8c3feff205.setIcon(icon_2e7bf7fcc5f6ca54e7090b9b09d02637);
+        
+    
+        var popup_4a526445adc0d94b69a348f9aedd8d07 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_40c9d2e19c52ad1c04a8da58b9203dc4 = $(`<div id="html_40c9d2e19c52ad1c04a8da58b9203dc4" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 119035</div>`)[0];
+                popup_4a526445adc0d94b69a348f9aedd8d07.setContent(html_40c9d2e19c52ad1c04a8da58b9203dc4);
+            
+        
+
+        marker_49dfd8902b3c92904ed4bc8c3feff205.bindPopup(popup_4a526445adc0d94b69a348f9aedd8d07)
+        ;
+
+        
+    
+    
+            var marker_53a0f70010e79bcc74d4f5c3e61dfffa = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_d24c305343b61eacdf17cf7ecefcd718 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_53a0f70010e79bcc74d4f5c3e61dfffa.setIcon(icon_d24c305343b61eacdf17cf7ecefcd718);
+        
+    
+        var popup_e44aa7ee458542156d39df81978d72ca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c59ba7bff85813e016125d7a3e5a87f1 = $(`<div id="html_c59ba7bff85813e016125d7a3e5a87f1" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 87621</div>`)[0];
+                popup_e44aa7ee458542156d39df81978d72ca.setContent(html_c59ba7bff85813e016125d7a3e5a87f1);
+            
+        
+
+        marker_53a0f70010e79bcc74d4f5c3e61dfffa.bindPopup(popup_e44aa7ee458542156d39df81978d72ca)
+        ;
+
+        
+    
+    
+            var marker_703b26cf1a1c6d8524d67895a0d79fbc = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_5e2457d03afb367d826b36b5ccba5639 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_703b26cf1a1c6d8524d67895a0d79fbc.setIcon(icon_5e2457d03afb367d826b36b5ccba5639);
+        
+    
+        var popup_cd584804e06dd96a400526e78afbd7d8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4c61e6277f604a4ae6efa3e471cdaca6 = $(`<div id="html_4c61e6277f604a4ae6efa3e471cdaca6" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 18291</div>`)[0];
+                popup_cd584804e06dd96a400526e78afbd7d8.setContent(html_4c61e6277f604a4ae6efa3e471cdaca6);
+            
+        
+
+        marker_703b26cf1a1c6d8524d67895a0d79fbc.bindPopup(popup_cd584804e06dd96a400526e78afbd7d8)
+        ;
+
+        
+    
+    
+            var marker_9ec178b600fcc09c87a39b70101a079f = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_ec6a38df7c7c4eb2bfb3e59882a7acf4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9ec178b600fcc09c87a39b70101a079f.setIcon(icon_ec6a38df7c7c4eb2bfb3e59882a7acf4);
+        
+    
+        var popup_34c9c5da2cffa5396f5afaef0bb836ef = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fa8319f1dc3f603e3644448171342c47 = $(`<div id="html_fa8319f1dc3f603e3644448171342c47" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 92767</div>`)[0];
+                popup_34c9c5da2cffa5396f5afaef0bb836ef.setContent(html_fa8319f1dc3f603e3644448171342c47);
+            
+        
+
+        marker_9ec178b600fcc09c87a39b70101a079f.bindPopup(popup_34c9c5da2cffa5396f5afaef0bb836ef)
+        ;
+
+        
+    
+    
+            var marker_e1f41e0e6d9132a6d9a599e6306cab7e = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_0739f2ce50e533532b97a4476facedd9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e1f41e0e6d9132a6d9a599e6306cab7e.setIcon(icon_0739f2ce50e533532b97a4476facedd9);
+        
+    
+        var popup_70645203689f71bb2b0b7de43cdaacdd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2179077ef71d305c123fc43ae597143d = $(`<div id="html_2179077ef71d305c123fc43ae597143d" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 92835</div>`)[0];
+                popup_70645203689f71bb2b0b7de43cdaacdd.setContent(html_2179077ef71d305c123fc43ae597143d);
+            
+        
+
+        marker_e1f41e0e6d9132a6d9a599e6306cab7e.bindPopup(popup_70645203689f71bb2b0b7de43cdaacdd)
+        ;
+
+        
+    
+    
+            var marker_fe6e2f2f3d1aab271d5563dab477b1b2 = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_cb61169161001d543bb87c0e0f454b72 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fe6e2f2f3d1aab271d5563dab477b1b2.setIcon(icon_cb61169161001d543bb87c0e0f454b72);
+        
+    
+        var popup_e35c1a0b63faf1c9753e5b0d99e2a080 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6cba1001b1f3b2b5695e1767eb59f082 = $(`<div id="html_6cba1001b1f3b2b5695e1767eb59f082" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 148002</div>`)[0];
+                popup_e35c1a0b63faf1c9753e5b0d99e2a080.setContent(html_6cba1001b1f3b2b5695e1767eb59f082);
+            
+        
+
+        marker_fe6e2f2f3d1aab271d5563dab477b1b2.bindPopup(popup_e35c1a0b63faf1c9753e5b0d99e2a080)
+        ;
+
+        
+    
+    
+            var marker_28476d9da61e2f9fedc0966631c91da4 = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_a1ac093f4a8e445daefdc96af6eb8532 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_28476d9da61e2f9fedc0966631c91da4.setIcon(icon_a1ac093f4a8e445daefdc96af6eb8532);
+        
+    
+        var popup_8d9faf3b94b700e2eaaa4e84a6167854 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8d4eeb3e3bfc4c17fc791c9356f90d05 = $(`<div id="html_8d4eeb3e3bfc4c17fc791c9356f90d05" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 136761</div>`)[0];
+                popup_8d9faf3b94b700e2eaaa4e84a6167854.setContent(html_8d4eeb3e3bfc4c17fc791c9356f90d05);
+            
+        
+
+        marker_28476d9da61e2f9fedc0966631c91da4.bindPopup(popup_8d9faf3b94b700e2eaaa4e84a6167854)
+        ;
+
+        
+    
+    
+            var marker_d6015df115c8ed6bab3ae3238f5c5446 = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_ed164eb102e9e125af138fd44b733561 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d6015df115c8ed6bab3ae3238f5c5446.setIcon(icon_ed164eb102e9e125af138fd44b733561);
+        
+    
+        var popup_ecbbdd2edc18b4dd2c16862e1cd9b57c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c9be59f41f5ff27086cb821496b48246 = $(`<div id="html_c9be59f41f5ff27086cb821496b48246" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 81358</div>`)[0];
+                popup_ecbbdd2edc18b4dd2c16862e1cd9b57c.setContent(html_c9be59f41f5ff27086cb821496b48246);
+            
+        
+
+        marker_d6015df115c8ed6bab3ae3238f5c5446.bindPopup(popup_ecbbdd2edc18b4dd2c16862e1cd9b57c)
+        ;
+
+        
+    
+    
+            var marker_dbc523bc81d903e3080ecda1ccdfac17 = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_fb12a9ddaef1f9888e52c6fabde031c9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_dbc523bc81d903e3080ecda1ccdfac17.setIcon(icon_fb12a9ddaef1f9888e52c6fabde031c9);
+        
+    
+        var popup_5caddcb60d60f314fea55dc1c500a2da = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e158210da7dda17496810413ad866568 = $(`<div id="html_e158210da7dda17496810413ad866568" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 59032</div>`)[0];
+                popup_5caddcb60d60f314fea55dc1c500a2da.setContent(html_e158210da7dda17496810413ad866568);
+            
+        
+
+        marker_dbc523bc81d903e3080ecda1ccdfac17.bindPopup(popup_5caddcb60d60f314fea55dc1c500a2da)
+        ;
+
+        
+    
+    
+            var marker_cbd6f9caee12f7cdc6e28e0ae61fa320 = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_5245da7fd18f97346ba5619a0a03175e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_cbd6f9caee12f7cdc6e28e0ae61fa320.setIcon(icon_5245da7fd18f97346ba5619a0a03175e);
+        
+    
+        var popup_42d4b5fb787f91ca09d45ce87ce9757f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c9915ebedc01c4d8e24720777ee9d8df = $(`<div id="html_c9915ebedc01c4d8e24720777ee9d8df" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 170539</div>`)[0];
+                popup_42d4b5fb787f91ca09d45ce87ce9757f.setContent(html_c9915ebedc01c4d8e24720777ee9d8df);
+            
+        
+
+        marker_cbd6f9caee12f7cdc6e28e0ae61fa320.bindPopup(popup_42d4b5fb787f91ca09d45ce87ce9757f)
+        ;
+
+        
+    
+    
+            var marker_d649754edbf06aef6e530141c410ed53 = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_4afdb46040879fc2ddee2dbd29cc574b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d649754edbf06aef6e530141c410ed53.setIcon(icon_4afdb46040879fc2ddee2dbd29cc574b);
+        
+    
+        var popup_e2304ee44a705502c75adc82e8e28c83 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7b7567467f2f4781d5962532dd163e02 = $(`<div id="html_7b7567467f2f4781d5962532dd163e02" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 81818</div>`)[0];
+                popup_e2304ee44a705502c75adc82e8e28c83.setContent(html_7b7567467f2f4781d5962532dd163e02);
+            
+        
+
+        marker_d649754edbf06aef6e530141c410ed53.bindPopup(popup_e2304ee44a705502c75adc82e8e28c83)
+        ;
+
+        
+    
+    
+            var marker_7bc14e23eff94348193bc49902c2ca2d = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_9a9b477773c613d81b47777bc2949d5d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7bc14e23eff94348193bc49902c2ca2d.setIcon(icon_9a9b477773c613d81b47777bc2949d5d);
+        
+    
+        var popup_3b58e5a42fc558d592363447b9701e0e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bcdebc1bb3cd551c8c06e702c7757db1 = $(`<div id="html_bcdebc1bb3cd551c8c06e702c7757db1" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 160269</div>`)[0];
+                popup_3b58e5a42fc558d592363447b9701e0e.setContent(html_bcdebc1bb3cd551c8c06e702c7757db1);
+            
+        
+
+        marker_7bc14e23eff94348193bc49902c2ca2d.bindPopup(popup_3b58e5a42fc558d592363447b9701e0e)
+        ;
+
+        
+    
+    
+            var marker_a2e97a57937e639325fd8d3c5d666007 = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_e8a5b5dffe479d0a87d76d60d508e4ec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a2e97a57937e639325fd8d3c5d666007.setIcon(icon_e8a5b5dffe479d0a87d76d60d508e4ec);
+        
+    
+        var popup_7832eb9eec0d3e36cfc0ba814593094b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e3553b45ca4337b2c7a61f69d60448df = $(`<div id="html_e3553b45ca4337b2c7a61f69d60448df" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 93624</div>`)[0];
+                popup_7832eb9eec0d3e36cfc0ba814593094b.setContent(html_e3553b45ca4337b2c7a61f69d60448df);
+            
+        
+
+        marker_a2e97a57937e639325fd8d3c5d666007.bindPopup(popup_7832eb9eec0d3e36cfc0ba814593094b)
+        ;
+
+        
+    
+    
+            var marker_2fd59381c6245189bfc140ca10898e27 = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_ae17f4794fa767a177c95dddb178f98e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2fd59381c6245189bfc140ca10898e27.setIcon(icon_ae17f4794fa767a177c95dddb178f98e);
+        
+    
+        var popup_d36ad056745aab7ed28704be9212f1da = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_77f76a3903e3c5291342a25ab094fee3 = $(`<div id="html_77f76a3903e3c5291342a25ab094fee3" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 97058</div>`)[0];
+                popup_d36ad056745aab7ed28704be9212f1da.setContent(html_77f76a3903e3c5291342a25ab094fee3);
+            
+        
+
+        marker_2fd59381c6245189bfc140ca10898e27.bindPopup(popup_d36ad056745aab7ed28704be9212f1da)
+        ;
+
+        
+    
+    
+            var marker_4a8c91f9780109e4440da0a78bdb1f50 = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_4dd0c811a03deceba2fceb41217f1e54 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4a8c91f9780109e4440da0a78bdb1f50.setIcon(icon_4dd0c811a03deceba2fceb41217f1e54);
+        
+    
+        var popup_be77e9efed85f8892c7e0594019b739c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1c30a1f239e02ce0e133e44360b832b5 = $(`<div id="html_1c30a1f239e02ce0e133e44360b832b5" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 165306</div>`)[0];
+                popup_be77e9efed85f8892c7e0594019b739c.setContent(html_1c30a1f239e02ce0e133e44360b832b5);
+            
+        
+
+        marker_4a8c91f9780109e4440da0a78bdb1f50.bindPopup(popup_be77e9efed85f8892c7e0594019b739c)
+        ;
+
+        
+    
+    
+            var marker_87c87e7a952d79fe4f6a4b7f39617c20 = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_30259558567fb65f035430b877280782 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_87c87e7a952d79fe4f6a4b7f39617c20.setIcon(icon_30259558567fb65f035430b877280782);
+        
+    
+        var popup_2a38f8ae8676474ba33afd6a90e192b4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3a9cf03e1359c7f409a5737b92ad88c7 = $(`<div id="html_3a9cf03e1359c7f409a5737b92ad88c7" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 97428</div>`)[0];
+                popup_2a38f8ae8676474ba33afd6a90e192b4.setContent(html_3a9cf03e1359c7f409a5737b92ad88c7);
+            
+        
+
+        marker_87c87e7a952d79fe4f6a4b7f39617c20.bindPopup(popup_2a38f8ae8676474ba33afd6a90e192b4)
+        ;
+
+        
+    
+    
+            var marker_795da986c008c5b3392d40f9909075d8 = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_02ad293b14c31ac7ee09e0eb1f2580aa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_795da986c008c5b3392d40f9909075d8.setIcon(icon_02ad293b14c31ac7ee09e0eb1f2580aa);
+        
+    
+        var popup_360e0f299a57489fa64a754a2b58f746 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_50c19b7545f924d96d6f48cf1ac15c56 = $(`<div id="html_50c19b7545f924d96d6f48cf1ac15c56" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 107821</div>`)[0];
+                popup_360e0f299a57489fa64a754a2b58f746.setContent(html_50c19b7545f924d96d6f48cf1ac15c56);
+            
+        
+
+        marker_795da986c008c5b3392d40f9909075d8.bindPopup(popup_360e0f299a57489fa64a754a2b58f746)
+        ;
+
+        
+    
+    
+            var marker_430ef5329132d5fab8563f4b439c9b72 = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_abf30fbbbad85f3eed16f088dbfd8f27 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_430ef5329132d5fab8563f4b439c9b72.setIcon(icon_abf30fbbbad85f3eed16f088dbfd8f27);
+        
+    
+        var popup_93ddd9fa62d3845213a16f093f12adf6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_95827b72e5147ed5411a069a64bf66fb = $(`<div id="html_95827b72e5147ed5411a069a64bf66fb" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 133280</div>`)[0];
+                popup_93ddd9fa62d3845213a16f093f12adf6.setContent(html_95827b72e5147ed5411a069a64bf66fb);
+            
+        
+
+        marker_430ef5329132d5fab8563f4b439c9b72.bindPopup(popup_93ddd9fa62d3845213a16f093f12adf6)
+        ;
+
+        
+    
+    
+            var marker_8dd88ad5d3a9fc07d7ff138451312b5f = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_d270d17fd63bb853710b3f159feb9f8d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8dd88ad5d3a9fc07d7ff138451312b5f.setIcon(icon_d270d17fd63bb853710b3f159feb9f8d);
+        
+    
+        var popup_57f6ab06b7a1ee34a90ac2e8ebded802 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c0e78e083642b1eb6720e3b0a8e0eb78 = $(`<div id="html_c0e78e083642b1eb6720e3b0a8e0eb78" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 11396</div>`)[0];
+                popup_57f6ab06b7a1ee34a90ac2e8ebded802.setContent(html_c0e78e083642b1eb6720e3b0a8e0eb78);
+            
+        
+
+        marker_8dd88ad5d3a9fc07d7ff138451312b5f.bindPopup(popup_57f6ab06b7a1ee34a90ac2e8ebded802)
+        ;
+
+        
+    
+    
+            var marker_3b07a2f2cdc91ff590b9b6f52714bc4d = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_ee9127894443a409d42e6036d241c7d9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3b07a2f2cdc91ff590b9b6f52714bc4d.setIcon(icon_ee9127894443a409d42e6036d241c7d9);
+        
+    
+        var popup_3b24b6394507ac5899362986e3fea594 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4234a3787387177db280bceb0241f95c = $(`<div id="html_4234a3787387177db280bceb0241f95c" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 121049</div>`)[0];
+                popup_3b24b6394507ac5899362986e3fea594.setContent(html_4234a3787387177db280bceb0241f95c);
+            
+        
+
+        marker_3b07a2f2cdc91ff590b9b6f52714bc4d.bindPopup(popup_3b24b6394507ac5899362986e3fea594)
+        ;
+
+        
+    
+    
+            var marker_ef0791fd9a23be4a65487134ababf3cd = L.marker(
+                [32.548, -116.974],
+                {}
+            ).addTo(marker_cluster_6420cd2c578e39f8de6746555590f0ae);
+        
+    
+            var icon_86bdcf4fba3279ab9f810d3d9458abee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ef0791fd9a23be4a65487134ababf3cd.setIcon(icon_86bdcf4fba3279ab9f810d3d9458abee);
+        
+    
+        var popup_f372676d40fc2fa2f061297cc2d69ea8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7ac42fdd6f9b85a2af70fdccf086aede = $(`<div id="html_7ac42fdd6f9b85a2af70fdccf086aede" style="width: 100.0%; height: 100.0%;">Port: Cross Border Xpress<br>State: California<br>Traffic Volume: 130924</div>`)[0];
+                popup_f372676d40fc2fa2f061297cc2d69ea8.setContent(html_7ac42fdd6f9b85a2af70fdccf086aede);
+            
+        
+
+        marker_ef0791fd9a23be4a65487134ababf3cd.bindPopup(popup_f372676d40fc2fa2f061297cc2d69ea8)
+        ;
+
+        
+    
+    
+            marker_cluster_6420cd2c578e39f8de6746555590f0ae.addTo(map_8d12fbcdf23f24098fb6a41b88671dda);
+        
+</script>
+</html>

@@ -1,0 +1,2432 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_45fe87b94d69f74fdc1899746d2ebb3f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_45fe87b94d69f74fdc1899746d2ebb3f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_45fe87b94d69f74fdc1899746d2ebb3f = L.map(
+                "map_45fe87b94d69f74fdc1899746d2ebb3f",
+                {
+                    center: [42.617999999999995, -82.53099999999999],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d69faf4fb2839bd2bd5e1abe1a19295e = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_d69faf4fb2839bd2bd5e1abe1a19295e.addTo(map_45fe87b94d69f74fdc1899746d2ebb3f);
+        
+    
+            var marker_cluster_94eb16ce65571582a8f19870b6f8ae95 = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var marker_c6c26d34519133b6a9d9222aafd48cd7 = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_a8f1eab5b373275bbbde903b3c1f2ac2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c6c26d34519133b6a9d9222aafd48cd7.setIcon(icon_a8f1eab5b373275bbbde903b3c1f2ac2);
+        
+    
+        var popup_70aca124c7d486b819c9d2b9f9fbe538 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1c83b24f975fb8fc9bc772fd56be5cae = $(`<div id="html_1c83b24f975fb8fc9bc772fd56be5cae" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 1779</div>`)[0];
+                popup_70aca124c7d486b819c9d2b9f9fbe538.setContent(html_1c83b24f975fb8fc9bc772fd56be5cae);
+            
+        
+
+        marker_c6c26d34519133b6a9d9222aafd48cd7.bindPopup(popup_70aca124c7d486b819c9d2b9f9fbe538)
+        ;
+
+        
+    
+    
+            var marker_c82c25043c465860d839ceb72dee0e15 = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_b519abf55e67554e7e971002eb8107bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c82c25043c465860d839ceb72dee0e15.setIcon(icon_b519abf55e67554e7e971002eb8107bf);
+        
+    
+        var popup_28779e696c963b5c8e560161aabae618 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_426e63e5a19a790c85019f4a776e258f = $(`<div id="html_426e63e5a19a790c85019f4a776e258f" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 3353</div>`)[0];
+                popup_28779e696c963b5c8e560161aabae618.setContent(html_426e63e5a19a790c85019f4a776e258f);
+            
+        
+
+        marker_c82c25043c465860d839ceb72dee0e15.bindPopup(popup_28779e696c963b5c8e560161aabae618)
+        ;
+
+        
+    
+    
+            var marker_c4c757483d7b20790769a96f97ab5818 = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_e319fcfa137c752971c8bccc5d5b9d14 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c4c757483d7b20790769a96f97ab5818.setIcon(icon_e319fcfa137c752971c8bccc5d5b9d14);
+        
+    
+        var popup_d40d666b77ee03d5b30635b04de54d97 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a9f0a64739a2bc8fbf2364c59d3ca0b1 = $(`<div id="html_a9f0a64739a2bc8fbf2364c59d3ca0b1" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 2177</div>`)[0];
+                popup_d40d666b77ee03d5b30635b04de54d97.setContent(html_a9f0a64739a2bc8fbf2364c59d3ca0b1);
+            
+        
+
+        marker_c4c757483d7b20790769a96f97ab5818.bindPopup(popup_d40d666b77ee03d5b30635b04de54d97)
+        ;
+
+        
+    
+    
+            var marker_905d3ee898435c12c19ad3c199c6a285 = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_e091fd03a98cb173f72cb84d8eb265f0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_905d3ee898435c12c19ad3c199c6a285.setIcon(icon_e091fd03a98cb173f72cb84d8eb265f0);
+        
+    
+        var popup_d4d685e8421cf0c260d2addd216efb7f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a25fcd26623b1c3a25896771a5d85a08 = $(`<div id="html_a25fcd26623b1c3a25896771a5d85a08" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 4336</div>`)[0];
+                popup_d4d685e8421cf0c260d2addd216efb7f.setContent(html_a25fcd26623b1c3a25896771a5d85a08);
+            
+        
+
+        marker_905d3ee898435c12c19ad3c199c6a285.bindPopup(popup_d4d685e8421cf0c260d2addd216efb7f)
+        ;
+
+        
+    
+    
+            var marker_e459eea8b74f1a59b76c2665b3ce7f55 = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_3e8a6071e9ba7b017397104292f6d07e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e459eea8b74f1a59b76c2665b3ce7f55.setIcon(icon_3e8a6071e9ba7b017397104292f6d07e);
+        
+    
+        var popup_54528b0087a5ef89a0513fd8090c4dfd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c1f94cdea7c3700f274f82ee056f7166 = $(`<div id="html_c1f94cdea7c3700f274f82ee056f7166" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 2790</div>`)[0];
+                popup_54528b0087a5ef89a0513fd8090c4dfd.setContent(html_c1f94cdea7c3700f274f82ee056f7166);
+            
+        
+
+        marker_e459eea8b74f1a59b76c2665b3ce7f55.bindPopup(popup_54528b0087a5ef89a0513fd8090c4dfd)
+        ;
+
+        
+    
+    
+            var marker_c92644002caaf03399a86864bf86da9a = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_0ce650e563d4ee5131078e2abe825e39 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c92644002caaf03399a86864bf86da9a.setIcon(icon_0ce650e563d4ee5131078e2abe825e39);
+        
+    
+        var popup_2fd8b8333d73a5d17e9bd0ad66f82ccd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_baf58986d33e26fbbdbd45a244592555 = $(`<div id="html_baf58986d33e26fbbdbd45a244592555" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 5846</div>`)[0];
+                popup_2fd8b8333d73a5d17e9bd0ad66f82ccd.setContent(html_baf58986d33e26fbbdbd45a244592555);
+            
+        
+
+        marker_c92644002caaf03399a86864bf86da9a.bindPopup(popup_2fd8b8333d73a5d17e9bd0ad66f82ccd)
+        ;
+
+        
+    
+    
+            var marker_5b98710d45b86ba698c4478d88baeb8b = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_1a995db126e7b83b6148374768c33062 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5b98710d45b86ba698c4478d88baeb8b.setIcon(icon_1a995db126e7b83b6148374768c33062);
+        
+    
+        var popup_85537798da6d3b1735191261e654f867 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6057a54b4710b3083bba869b5c24eefe = $(`<div id="html_6057a54b4710b3083bba869b5c24eefe" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 2561</div>`)[0];
+                popup_85537798da6d3b1735191261e654f867.setContent(html_6057a54b4710b3083bba869b5c24eefe);
+            
+        
+
+        marker_5b98710d45b86ba698c4478d88baeb8b.bindPopup(popup_85537798da6d3b1735191261e654f867)
+        ;
+
+        
+    
+    
+            var marker_84d4c113246393e945e2904bcd32bb8c = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_249a21f023fd759af7aaf2584ece4aa1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_84d4c113246393e945e2904bcd32bb8c.setIcon(icon_249a21f023fd759af7aaf2584ece4aa1);
+        
+    
+        var popup_67986dd901363b7a55f510e495df84a1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e3bdb3240e55e03131029803d2d3802b = $(`<div id="html_e3bdb3240e55e03131029803d2d3802b" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 5067</div>`)[0];
+                popup_67986dd901363b7a55f510e495df84a1.setContent(html_e3bdb3240e55e03131029803d2d3802b);
+            
+        
+
+        marker_84d4c113246393e945e2904bcd32bb8c.bindPopup(popup_67986dd901363b7a55f510e495df84a1)
+        ;
+
+        
+    
+    
+            var marker_53a1b1c9140319b9e81d68196754fe43 = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_de0555bd77876bece7265a45dc9a655d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_53a1b1c9140319b9e81d68196754fe43.setIcon(icon_de0555bd77876bece7265a45dc9a655d);
+        
+    
+        var popup_2a1e3981627c82f73961ddb5f63d158b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ade91048f5d4c5aff018e24c43fde5da = $(`<div id="html_ade91048f5d4c5aff018e24c43fde5da" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 4627</div>`)[0];
+                popup_2a1e3981627c82f73961ddb5f63d158b.setContent(html_ade91048f5d4c5aff018e24c43fde5da);
+            
+        
+
+        marker_53a1b1c9140319b9e81d68196754fe43.bindPopup(popup_2a1e3981627c82f73961ddb5f63d158b)
+        ;
+
+        
+    
+    
+            var marker_54522b1448ee3e7b887c0b5f4998ed1d = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_94d257fdbecf45593e50258f92527ae2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_54522b1448ee3e7b887c0b5f4998ed1d.setIcon(icon_94d257fdbecf45593e50258f92527ae2);
+        
+    
+        var popup_c9b5de36cd728e385bce78eddba2d300 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7400e512f15a20aeb1591ccad8adfbe5 = $(`<div id="html_7400e512f15a20aeb1591ccad8adfbe5" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 5606</div>`)[0];
+                popup_c9b5de36cd728e385bce78eddba2d300.setContent(html_7400e512f15a20aeb1591ccad8adfbe5);
+            
+        
+
+        marker_54522b1448ee3e7b887c0b5f4998ed1d.bindPopup(popup_c9b5de36cd728e385bce78eddba2d300)
+        ;
+
+        
+    
+    
+            var marker_35651f2dc1acb7d9993feb7588dba77f = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_ebba22f15b820a1e3dcc7d7ad01eed52 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_35651f2dc1acb7d9993feb7588dba77f.setIcon(icon_ebba22f15b820a1e3dcc7d7ad01eed52);
+        
+    
+        var popup_cde93671b9e92ddaeeabd24b9a5ea61f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f8daabd39b4de0b130bb94c1bc798a66 = $(`<div id="html_f8daabd39b4de0b130bb94c1bc798a66" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 2292</div>`)[0];
+                popup_cde93671b9e92ddaeeabd24b9a5ea61f.setContent(html_f8daabd39b4de0b130bb94c1bc798a66);
+            
+        
+
+        marker_35651f2dc1acb7d9993feb7588dba77f.bindPopup(popup_cde93671b9e92ddaeeabd24b9a5ea61f)
+        ;
+
+        
+    
+    
+            var marker_fb556067b8565edaf2e4324910eefbeb = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_03ee9f6b57031c2e3ea8d675e3c48209 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fb556067b8565edaf2e4324910eefbeb.setIcon(icon_03ee9f6b57031c2e3ea8d675e3c48209);
+        
+    
+        var popup_a504b5196adf0988b5b24b60b7f68c50 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_52e20f182e3161b2a1a3c86c0800ff1c = $(`<div id="html_52e20f182e3161b2a1a3c86c0800ff1c" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 4442</div>`)[0];
+                popup_a504b5196adf0988b5b24b60b7f68c50.setContent(html_52e20f182e3161b2a1a3c86c0800ff1c);
+            
+        
+
+        marker_fb556067b8565edaf2e4324910eefbeb.bindPopup(popup_a504b5196adf0988b5b24b60b7f68c50)
+        ;
+
+        
+    
+    
+            var marker_4252d782d0bd4261ed19f9cea81e4bce = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_5056a26e330497d61092856ac09b0cfd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4252d782d0bd4261ed19f9cea81e4bce.setIcon(icon_5056a26e330497d61092856ac09b0cfd);
+        
+    
+        var popup_bf0dea6c450481276c974f10883ac083 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ae7ab958ecaa5ec325a71b034d4948d1 = $(`<div id="html_ae7ab958ecaa5ec325a71b034d4948d1" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 99</div>`)[0];
+                popup_bf0dea6c450481276c974f10883ac083.setContent(html_ae7ab958ecaa5ec325a71b034d4948d1);
+            
+        
+
+        marker_4252d782d0bd4261ed19f9cea81e4bce.bindPopup(popup_bf0dea6c450481276c974f10883ac083)
+        ;
+
+        
+    
+    
+            var marker_06b3bc2f7a7f685f2b6103fc5583f0d6 = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_b445157c45209cb3473eb09857d0404b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_06b3bc2f7a7f685f2b6103fc5583f0d6.setIcon(icon_b445157c45209cb3473eb09857d0404b);
+        
+    
+        var popup_f25f0f425ac02392df0ba74cbbe2c479 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a03e3189c4c67422dc2a4efabdd83c01 = $(`<div id="html_a03e3189c4c67422dc2a4efabdd83c01" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 2587</div>`)[0];
+                popup_f25f0f425ac02392df0ba74cbbe2c479.setContent(html_a03e3189c4c67422dc2a4efabdd83c01);
+            
+        
+
+        marker_06b3bc2f7a7f685f2b6103fc5583f0d6.bindPopup(popup_f25f0f425ac02392df0ba74cbbe2c479)
+        ;
+
+        
+    
+    
+            var marker_1e606cc53465956ae40ddbb5d6cc94e5 = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_7bb8dfe0935d9857bce9620f70c318ae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1e606cc53465956ae40ddbb5d6cc94e5.setIcon(icon_7bb8dfe0935d9857bce9620f70c318ae);
+        
+    
+        var popup_eee851eaede1575a8ce07ddd891463f5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b6229c57a1c8899bbc5f42118db861bd = $(`<div id="html_b6229c57a1c8899bbc5f42118db861bd" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 2616</div>`)[0];
+                popup_eee851eaede1575a8ce07ddd891463f5.setContent(html_b6229c57a1c8899bbc5f42118db861bd);
+            
+        
+
+        marker_1e606cc53465956ae40ddbb5d6cc94e5.bindPopup(popup_eee851eaede1575a8ce07ddd891463f5)
+        ;
+
+        
+    
+    
+            var marker_b114e86b6719fc0b063dd2e571cc6925 = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_f12c416361a564b2f59fb6bd5bdd27cd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b114e86b6719fc0b063dd2e571cc6925.setIcon(icon_f12c416361a564b2f59fb6bd5bdd27cd);
+        
+    
+        var popup_bbe4260e5427bf08b87846b448bb5e44 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4238d08f79151dc3ecc805eab305398d = $(`<div id="html_4238d08f79151dc3ecc805eab305398d" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 1405</div>`)[0];
+                popup_bbe4260e5427bf08b87846b448bb5e44.setContent(html_4238d08f79151dc3ecc805eab305398d);
+            
+        
+
+        marker_b114e86b6719fc0b063dd2e571cc6925.bindPopup(popup_bbe4260e5427bf08b87846b448bb5e44)
+        ;
+
+        
+    
+    
+            var marker_805cce9a78782f952955f5d52a12414f = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_65e668f6cd2ef1bf925d7054ac16e042 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_805cce9a78782f952955f5d52a12414f.setIcon(icon_65e668f6cd2ef1bf925d7054ac16e042);
+        
+    
+        var popup_d5c50be0b4221aa481186e5901df96f0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_651ac3f7ca3cc565694a8e8a2a03d93d = $(`<div id="html_651ac3f7ca3cc565694a8e8a2a03d93d" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 1963</div>`)[0];
+                popup_d5c50be0b4221aa481186e5901df96f0.setContent(html_651ac3f7ca3cc565694a8e8a2a03d93d);
+            
+        
+
+        marker_805cce9a78782f952955f5d52a12414f.bindPopup(popup_d5c50be0b4221aa481186e5901df96f0)
+        ;
+
+        
+    
+    
+            var marker_acd619084a2cc01307cc2293d44cbe92 = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_39c827599560ba326379aa5676e64821 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_acd619084a2cc01307cc2293d44cbe92.setIcon(icon_39c827599560ba326379aa5676e64821);
+        
+    
+        var popup_6e8ef81b7ac44104cb5d9ab993dd5462 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_69259d798dd26b48922880ffa0ca55ec = $(`<div id="html_69259d798dd26b48922880ffa0ca55ec" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 3787</div>`)[0];
+                popup_6e8ef81b7ac44104cb5d9ab993dd5462.setContent(html_69259d798dd26b48922880ffa0ca55ec);
+            
+        
+
+        marker_acd619084a2cc01307cc2293d44cbe92.bindPopup(popup_6e8ef81b7ac44104cb5d9ab993dd5462)
+        ;
+
+        
+    
+    
+            var marker_ccf2dd1d9544cf0f5958af71c2519e94 = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_8963204bcdb88308b06befccff87fbfc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ccf2dd1d9544cf0f5958af71c2519e94.setIcon(icon_8963204bcdb88308b06befccff87fbfc);
+        
+    
+        var popup_13360358c7282849bd2f6732c3a0ed19 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_16e6af2651d1211347af41e55a784e55 = $(`<div id="html_16e6af2651d1211347af41e55a784e55" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 1110</div>`)[0];
+                popup_13360358c7282849bd2f6732c3a0ed19.setContent(html_16e6af2651d1211347af41e55a784e55);
+            
+        
+
+        marker_ccf2dd1d9544cf0f5958af71c2519e94.bindPopup(popup_13360358c7282849bd2f6732c3a0ed19)
+        ;
+
+        
+    
+    
+            var marker_82a57bf4d39de20021c61ceed54f8759 = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_87724209086c5bf177fc4dd1fb68683a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_82a57bf4d39de20021c61ceed54f8759.setIcon(icon_87724209086c5bf177fc4dd1fb68683a);
+        
+    
+        var popup_8f7adb5d96a0bf00a74c72e88df870de = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_672721e5c3ae02d15cc66be60721478b = $(`<div id="html_672721e5c3ae02d15cc66be60721478b" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 5050</div>`)[0];
+                popup_8f7adb5d96a0bf00a74c72e88df870de.setContent(html_672721e5c3ae02d15cc66be60721478b);
+            
+        
+
+        marker_82a57bf4d39de20021c61ceed54f8759.bindPopup(popup_8f7adb5d96a0bf00a74c72e88df870de)
+        ;
+
+        
+    
+    
+            var marker_65c72e7a39cd15c26680a20ee30ea9a9 = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_ebdf37f00d6852e6ee1a92ba8f683fde = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_65c72e7a39cd15c26680a20ee30ea9a9.setIcon(icon_ebdf37f00d6852e6ee1a92ba8f683fde);
+        
+    
+        var popup_eef054c5e078e613fa03feb45e74643d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_af724475ce96887393d1b42c5a381d1e = $(`<div id="html_af724475ce96887393d1b42c5a381d1e" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 4365</div>`)[0];
+                popup_eef054c5e078e613fa03feb45e74643d.setContent(html_af724475ce96887393d1b42c5a381d1e);
+            
+        
+
+        marker_65c72e7a39cd15c26680a20ee30ea9a9.bindPopup(popup_eef054c5e078e613fa03feb45e74643d)
+        ;
+
+        
+    
+    
+            var marker_67001613bf2f1d959d6b38895a6a064d = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_755fd098184f914d3195bcf5aab67ce7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_67001613bf2f1d959d6b38895a6a064d.setIcon(icon_755fd098184f914d3195bcf5aab67ce7);
+        
+    
+        var popup_22b333a2f94a289af9fb6d73b3a3c27a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d756f277651202826a0b710dc2517850 = $(`<div id="html_d756f277651202826a0b710dc2517850" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 4835</div>`)[0];
+                popup_22b333a2f94a289af9fb6d73b3a3c27a.setContent(html_d756f277651202826a0b710dc2517850);
+            
+        
+
+        marker_67001613bf2f1d959d6b38895a6a064d.bindPopup(popup_22b333a2f94a289af9fb6d73b3a3c27a)
+        ;
+
+        
+    
+    
+            var marker_fddbbed60654938832dfb1487b7c5a46 = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_955ec503e288b58892e94d05560be520 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fddbbed60654938832dfb1487b7c5a46.setIcon(icon_955ec503e288b58892e94d05560be520);
+        
+    
+        var popup_3e1ec124844912ef727f17baec5d45e6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0b4d1d3c2330562b37ef106b9e6b474f = $(`<div id="html_0b4d1d3c2330562b37ef106b9e6b474f" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 175</div>`)[0];
+                popup_3e1ec124844912ef727f17baec5d45e6.setContent(html_0b4d1d3c2330562b37ef106b9e6b474f);
+            
+        
+
+        marker_fddbbed60654938832dfb1487b7c5a46.bindPopup(popup_3e1ec124844912ef727f17baec5d45e6)
+        ;
+
+        
+    
+    
+            var marker_af84de9c9c85812dd501483a872c82ad = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_dbc348a4356741e91633e990b82ca983 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_af84de9c9c85812dd501483a872c82ad.setIcon(icon_dbc348a4356741e91633e990b82ca983);
+        
+    
+        var popup_014bf3b4377364de30a8d26f375b781f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a113991e4df55dad35b2c1164d274633 = $(`<div id="html_a113991e4df55dad35b2c1164d274633" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 1551</div>`)[0];
+                popup_014bf3b4377364de30a8d26f375b781f.setContent(html_a113991e4df55dad35b2c1164d274633);
+            
+        
+
+        marker_af84de9c9c85812dd501483a872c82ad.bindPopup(popup_014bf3b4377364de30a8d26f375b781f)
+        ;
+
+        
+    
+    
+            var marker_7d56c03f950466d6b6641684649cb79b = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_28ee83f5aa260c4c8b0c87321690e169 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7d56c03f950466d6b6641684649cb79b.setIcon(icon_28ee83f5aa260c4c8b0c87321690e169);
+        
+    
+        var popup_607b0e85a9d51fc08bab83c6c9d88703 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_13e54ac7b1c4a352e19b6c2a66154683 = $(`<div id="html_13e54ac7b1c4a352e19b6c2a66154683" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 2276</div>`)[0];
+                popup_607b0e85a9d51fc08bab83c6c9d88703.setContent(html_13e54ac7b1c4a352e19b6c2a66154683);
+            
+        
+
+        marker_7d56c03f950466d6b6641684649cb79b.bindPopup(popup_607b0e85a9d51fc08bab83c6c9d88703)
+        ;
+
+        
+    
+    
+            var marker_0a656822f052e068496399f6504dbca9 = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_30adc3b7ba5e9196b45bac1ab90f9122 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0a656822f052e068496399f6504dbca9.setIcon(icon_30adc3b7ba5e9196b45bac1ab90f9122);
+        
+    
+        var popup_5bc63bb587562fc17e810760a0ee6a13 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_de8230dc2e9d766e72027612c299b551 = $(`<div id="html_de8230dc2e9d766e72027612c299b551" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 6092</div>`)[0];
+                popup_5bc63bb587562fc17e810760a0ee6a13.setContent(html_de8230dc2e9d766e72027612c299b551);
+            
+        
+
+        marker_0a656822f052e068496399f6504dbca9.bindPopup(popup_5bc63bb587562fc17e810760a0ee6a13)
+        ;
+
+        
+    
+    
+            var marker_420c17f191f69b42c8f7b345f672fb84 = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_92c0d2b1c2c1232d8183c2956df2024d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_420c17f191f69b42c8f7b345f672fb84.setIcon(icon_92c0d2b1c2c1232d8183c2956df2024d);
+        
+    
+        var popup_b744454f49582c08082fe68f77ce871b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_40c56be6fab0f5d40aa3c0daa7dd3be5 = $(`<div id="html_40c56be6fab0f5d40aa3c0daa7dd3be5" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 13082</div>`)[0];
+                popup_b744454f49582c08082fe68f77ce871b.setContent(html_40c56be6fab0f5d40aa3c0daa7dd3be5);
+            
+        
+
+        marker_420c17f191f69b42c8f7b345f672fb84.bindPopup(popup_b744454f49582c08082fe68f77ce871b)
+        ;
+
+        
+    
+    
+            var marker_793f0f4502e2d07dbcd8f2fceabed072 = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_09547e07814e9da01b28ed109bf44865 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_793f0f4502e2d07dbcd8f2fceabed072.setIcon(icon_09547e07814e9da01b28ed109bf44865);
+        
+    
+        var popup_f277a6caf4b496c6d0a0865615283728 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_21e07d84d92e30f70c63712bdcf5a3c1 = $(`<div id="html_21e07d84d92e30f70c63712bdcf5a3c1" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 5343</div>`)[0];
+                popup_f277a6caf4b496c6d0a0865615283728.setContent(html_21e07d84d92e30f70c63712bdcf5a3c1);
+            
+        
+
+        marker_793f0f4502e2d07dbcd8f2fceabed072.bindPopup(popup_f277a6caf4b496c6d0a0865615283728)
+        ;
+
+        
+    
+    
+            var marker_77326dfb2558f4b5a5982d62c9fe92f1 = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_2296e9d275f5e89e03a0a62a55b8668b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_77326dfb2558f4b5a5982d62c9fe92f1.setIcon(icon_2296e9d275f5e89e03a0a62a55b8668b);
+        
+    
+        var popup_28341726f62026a8b65c832d03f5decc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4ac215aa71c71201a3ad2f925425783d = $(`<div id="html_4ac215aa71c71201a3ad2f925425783d" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 5489</div>`)[0];
+                popup_28341726f62026a8b65c832d03f5decc.setContent(html_4ac215aa71c71201a3ad2f925425783d);
+            
+        
+
+        marker_77326dfb2558f4b5a5982d62c9fe92f1.bindPopup(popup_28341726f62026a8b65c832d03f5decc)
+        ;
+
+        
+    
+    
+            var marker_23ba082c6ded5641544596b7df9859f7 = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_03dc16dddcdbbc7e29a233635f80b244 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_23ba082c6ded5641544596b7df9859f7.setIcon(icon_03dc16dddcdbbc7e29a233635f80b244);
+        
+    
+        var popup_874568bc89525014d3e825d5771b1f8a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_49b6df1f8832f2d547f14b8fc2962928 = $(`<div id="html_49b6df1f8832f2d547f14b8fc2962928" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 2859</div>`)[0];
+                popup_874568bc89525014d3e825d5771b1f8a.setContent(html_49b6df1f8832f2d547f14b8fc2962928);
+            
+        
+
+        marker_23ba082c6ded5641544596b7df9859f7.bindPopup(popup_874568bc89525014d3e825d5771b1f8a)
+        ;
+
+        
+    
+    
+            var marker_eca6d65d18ac477f9151f910c59bda61 = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_4fc8f5bc0e5a8e3a7638ac0445c50cdb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_eca6d65d18ac477f9151f910c59bda61.setIcon(icon_4fc8f5bc0e5a8e3a7638ac0445c50cdb);
+        
+    
+        var popup_119ab85f9942bbea46d56e12c4528b39 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2a3ed6a0d10115160b83cca70b6321b8 = $(`<div id="html_2a3ed6a0d10115160b83cca70b6321b8" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 3075</div>`)[0];
+                popup_119ab85f9942bbea46d56e12c4528b39.setContent(html_2a3ed6a0d10115160b83cca70b6321b8);
+            
+        
+
+        marker_eca6d65d18ac477f9151f910c59bda61.bindPopup(popup_119ab85f9942bbea46d56e12c4528b39)
+        ;
+
+        
+    
+    
+            var marker_dbbb6e5d07720db3da840b33ee26dc0d = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_d98a3fd377f9a2e2b3d41913d29ba208 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_dbbb6e5d07720db3da840b33ee26dc0d.setIcon(icon_d98a3fd377f9a2e2b3d41913d29ba208);
+        
+    
+        var popup_5639cfda96a5e6333def9fe8017fa19c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_404c5d535492eedce8c7f641e9d6280a = $(`<div id="html_404c5d535492eedce8c7f641e9d6280a" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 2320</div>`)[0];
+                popup_5639cfda96a5e6333def9fe8017fa19c.setContent(html_404c5d535492eedce8c7f641e9d6280a);
+            
+        
+
+        marker_dbbb6e5d07720db3da840b33ee26dc0d.bindPopup(popup_5639cfda96a5e6333def9fe8017fa19c)
+        ;
+
+        
+    
+    
+            var marker_3b35f969f71f4fad82542917d337a16c = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_18ab7d1be4347e0708bfafef9f613cdd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3b35f969f71f4fad82542917d337a16c.setIcon(icon_18ab7d1be4347e0708bfafef9f613cdd);
+        
+    
+        var popup_a5f1488f75c76ab7064951a3db27ff66 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ed28ece01786bccd7e9832ee94e95172 = $(`<div id="html_ed28ece01786bccd7e9832ee94e95172" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 3490</div>`)[0];
+                popup_a5f1488f75c76ab7064951a3db27ff66.setContent(html_ed28ece01786bccd7e9832ee94e95172);
+            
+        
+
+        marker_3b35f969f71f4fad82542917d337a16c.bindPopup(popup_a5f1488f75c76ab7064951a3db27ff66)
+        ;
+
+        
+    
+    
+            var marker_8f0cde23bad1dbc7af070adf18255e6c = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_543d67dd5463426a3ace6b9eaf3835d7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8f0cde23bad1dbc7af070adf18255e6c.setIcon(icon_543d67dd5463426a3ace6b9eaf3835d7);
+        
+    
+        var popup_ad93e83541db1d6f4cbb45e9d491208a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3a9d8b741c9a7af20b880e2eb0255441 = $(`<div id="html_3a9d8b741c9a7af20b880e2eb0255441" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 2457</div>`)[0];
+                popup_ad93e83541db1d6f4cbb45e9d491208a.setContent(html_3a9d8b741c9a7af20b880e2eb0255441);
+            
+        
+
+        marker_8f0cde23bad1dbc7af070adf18255e6c.bindPopup(popup_ad93e83541db1d6f4cbb45e9d491208a)
+        ;
+
+        
+    
+    
+            var marker_e8ace6c05f7a0e995f21cd0905ba6648 = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_30e33191f5c94fafebae62b19a596db8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e8ace6c05f7a0e995f21cd0905ba6648.setIcon(icon_30e33191f5c94fafebae62b19a596db8);
+        
+    
+        var popup_5fc2c5d0d0fdd7cce4cf70300f37b47b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_67f7ae9b05b6f98ca809d5ebd6c28b20 = $(`<div id="html_67f7ae9b05b6f98ca809d5ebd6c28b20" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 11379</div>`)[0];
+                popup_5fc2c5d0d0fdd7cce4cf70300f37b47b.setContent(html_67f7ae9b05b6f98ca809d5ebd6c28b20);
+            
+        
+
+        marker_e8ace6c05f7a0e995f21cd0905ba6648.bindPopup(popup_5fc2c5d0d0fdd7cce4cf70300f37b47b)
+        ;
+
+        
+    
+    
+            var marker_b0c2bbc40112cd89b7000dbbe4733ba4 = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_d96968907fecfc579b8e41f5ddc09801 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b0c2bbc40112cd89b7000dbbe4733ba4.setIcon(icon_d96968907fecfc579b8e41f5ddc09801);
+        
+    
+        var popup_053ab4492079fc9fc7df49e93e32e9ef = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c101c3a5193dad99e41c8ec9286cc3f5 = $(`<div id="html_c101c3a5193dad99e41c8ec9286cc3f5" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 1936</div>`)[0];
+                popup_053ab4492079fc9fc7df49e93e32e9ef.setContent(html_c101c3a5193dad99e41c8ec9286cc3f5);
+            
+        
+
+        marker_b0c2bbc40112cd89b7000dbbe4733ba4.bindPopup(popup_053ab4492079fc9fc7df49e93e32e9ef)
+        ;
+
+        
+    
+    
+            var marker_768c94196046ae2ca159e3fbbfe2ec96 = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_bc65b291c2edab213fed5d6f06621440 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_768c94196046ae2ca159e3fbbfe2ec96.setIcon(icon_bc65b291c2edab213fed5d6f06621440);
+        
+    
+        var popup_07640cd80a52dd094486be546aa82bda = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a446ec75934e51eaab840fec6cc976cd = $(`<div id="html_a446ec75934e51eaab840fec6cc976cd" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 3260</div>`)[0];
+                popup_07640cd80a52dd094486be546aa82bda.setContent(html_a446ec75934e51eaab840fec6cc976cd);
+            
+        
+
+        marker_768c94196046ae2ca159e3fbbfe2ec96.bindPopup(popup_07640cd80a52dd094486be546aa82bda)
+        ;
+
+        
+    
+    
+            var marker_6d0f3bb1e2e41358d1345483faa07e65 = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_ed466e7bae052198bac048f9bf387ee2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6d0f3bb1e2e41358d1345483faa07e65.setIcon(icon_ed466e7bae052198bac048f9bf387ee2);
+        
+    
+        var popup_60cad8f2da69045bad32c081e3dbe964 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_878716cf85379a29255669c50b8cfde4 = $(`<div id="html_878716cf85379a29255669c50b8cfde4" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 8593</div>`)[0];
+                popup_60cad8f2da69045bad32c081e3dbe964.setContent(html_878716cf85379a29255669c50b8cfde4);
+            
+        
+
+        marker_6d0f3bb1e2e41358d1345483faa07e65.bindPopup(popup_60cad8f2da69045bad32c081e3dbe964)
+        ;
+
+        
+    
+    
+            var marker_d5dff6a0d8fa7ae9e1e47857154a45d7 = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_1ea12314922567c96aae3b78df14378d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d5dff6a0d8fa7ae9e1e47857154a45d7.setIcon(icon_1ea12314922567c96aae3b78df14378d);
+        
+    
+        var popup_11891e88a9f1b13691fb8da692829de3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7f120851037b213e45604552eab8a383 = $(`<div id="html_7f120851037b213e45604552eab8a383" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 2389</div>`)[0];
+                popup_11891e88a9f1b13691fb8da692829de3.setContent(html_7f120851037b213e45604552eab8a383);
+            
+        
+
+        marker_d5dff6a0d8fa7ae9e1e47857154a45d7.bindPopup(popup_11891e88a9f1b13691fb8da692829de3)
+        ;
+
+        
+    
+    
+            var marker_42961715f1b3ecee44b42be54325d00e = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_6b962d5cfb1c47f4eaaadf84c5734380 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_42961715f1b3ecee44b42be54325d00e.setIcon(icon_6b962d5cfb1c47f4eaaadf84c5734380);
+        
+    
+        var popup_22f79214961c537bc6e46248b9f8ae84 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9f5cfd5d457e0b24f86e2739fd6778ed = $(`<div id="html_9f5cfd5d457e0b24f86e2739fd6778ed" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 1299</div>`)[0];
+                popup_22f79214961c537bc6e46248b9f8ae84.setContent(html_9f5cfd5d457e0b24f86e2739fd6778ed);
+            
+        
+
+        marker_42961715f1b3ecee44b42be54325d00e.bindPopup(popup_22f79214961c537bc6e46248b9f8ae84)
+        ;
+
+        
+    
+    
+            var marker_fb311417ac57b43c6dd1b8e54a4f72ea = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_0650b4595539b9ecde76ed041905fab8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fb311417ac57b43c6dd1b8e54a4f72ea.setIcon(icon_0650b4595539b9ecde76ed041905fab8);
+        
+    
+        var popup_5de3cc81733416ae52a2af7ff122717e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_09320807c4689a7248174646a70cdc63 = $(`<div id="html_09320807c4689a7248174646a70cdc63" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 4984</div>`)[0];
+                popup_5de3cc81733416ae52a2af7ff122717e.setContent(html_09320807c4689a7248174646a70cdc63);
+            
+        
+
+        marker_fb311417ac57b43c6dd1b8e54a4f72ea.bindPopup(popup_5de3cc81733416ae52a2af7ff122717e)
+        ;
+
+        
+    
+    
+            var marker_f997a5953b24e932db63da1b9338cf31 = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_491b88db9cb0f13cbd5ec7f122fafbf0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f997a5953b24e932db63da1b9338cf31.setIcon(icon_491b88db9cb0f13cbd5ec7f122fafbf0);
+        
+    
+        var popup_a66fdcea2bb3f1cc2629b4b2e86d7741 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6a31157cac761fd6e5df1a63eba036a6 = $(`<div id="html_6a31157cac761fd6e5df1a63eba036a6" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 6042</div>`)[0];
+                popup_a66fdcea2bb3f1cc2629b4b2e86d7741.setContent(html_6a31157cac761fd6e5df1a63eba036a6);
+            
+        
+
+        marker_f997a5953b24e932db63da1b9338cf31.bindPopup(popup_a66fdcea2bb3f1cc2629b4b2e86d7741)
+        ;
+
+        
+    
+    
+            var marker_b2a158915a47690f00681e3c04e89531 = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_b6a1077e2850f8c858f3a54d4508e9ed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b2a158915a47690f00681e3c04e89531.setIcon(icon_b6a1077e2850f8c858f3a54d4508e9ed);
+        
+    
+        var popup_dd9cafa74de123597e080049ca840d11 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_27ce1cea0aeb7d8a932726242b8bab13 = $(`<div id="html_27ce1cea0aeb7d8a932726242b8bab13" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 2405</div>`)[0];
+                popup_dd9cafa74de123597e080049ca840d11.setContent(html_27ce1cea0aeb7d8a932726242b8bab13);
+            
+        
+
+        marker_b2a158915a47690f00681e3c04e89531.bindPopup(popup_dd9cafa74de123597e080049ca840d11)
+        ;
+
+        
+    
+    
+            var marker_be7dc672c4cf1590b0047f5a7a705851 = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_5327c607cfd4499ef2b73c2c11eb3ce7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_be7dc672c4cf1590b0047f5a7a705851.setIcon(icon_5327c607cfd4499ef2b73c2c11eb3ce7);
+        
+    
+        var popup_d3d4e024955dbb28b6c46da2a3b2455d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_539ac7f642295259b38b5a7401a96645 = $(`<div id="html_539ac7f642295259b38b5a7401a96645" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 6645</div>`)[0];
+                popup_d3d4e024955dbb28b6c46da2a3b2455d.setContent(html_539ac7f642295259b38b5a7401a96645);
+            
+        
+
+        marker_be7dc672c4cf1590b0047f5a7a705851.bindPopup(popup_d3d4e024955dbb28b6c46da2a3b2455d)
+        ;
+
+        
+    
+    
+            var marker_71f9ff56416f316026790415e4a74ea9 = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_1e3dca302d235ada300ee08cd8725324 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_71f9ff56416f316026790415e4a74ea9.setIcon(icon_1e3dca302d235ada300ee08cd8725324);
+        
+    
+        var popup_4b6c4022049a897c525ec6e5f0a411fd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_859bd32041d69af8f868e70bfdea3e91 = $(`<div id="html_859bd32041d69af8f868e70bfdea3e91" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 2732</div>`)[0];
+                popup_4b6c4022049a897c525ec6e5f0a411fd.setContent(html_859bd32041d69af8f868e70bfdea3e91);
+            
+        
+
+        marker_71f9ff56416f316026790415e4a74ea9.bindPopup(popup_4b6c4022049a897c525ec6e5f0a411fd)
+        ;
+
+        
+    
+    
+            var marker_eab9cd75d29302c2c4ee9d51f883ea35 = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_6998cb306fca89968fd082ba6ae648f2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_eab9cd75d29302c2c4ee9d51f883ea35.setIcon(icon_6998cb306fca89968fd082ba6ae648f2);
+        
+    
+        var popup_d58b1885785f54057d52ce6b03385e69 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_912a7e451ae04cd763902ebc5e6c4f06 = $(`<div id="html_912a7e451ae04cd763902ebc5e6c4f06" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 2536</div>`)[0];
+                popup_d58b1885785f54057d52ce6b03385e69.setContent(html_912a7e451ae04cd763902ebc5e6c4f06);
+            
+        
+
+        marker_eab9cd75d29302c2c4ee9d51f883ea35.bindPopup(popup_d58b1885785f54057d52ce6b03385e69)
+        ;
+
+        
+    
+    
+            var marker_a0549ca38385266be9a524a103325a33 = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_61264237687eebd94d1f1bbb6ab40221 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a0549ca38385266be9a524a103325a33.setIcon(icon_61264237687eebd94d1f1bbb6ab40221);
+        
+    
+        var popup_89224b70343c813fe64b53a6e97be347 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4246ecc7c3c72fce5e907f7adeab0bb9 = $(`<div id="html_4246ecc7c3c72fce5e907f7adeab0bb9" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 3986</div>`)[0];
+                popup_89224b70343c813fe64b53a6e97be347.setContent(html_4246ecc7c3c72fce5e907f7adeab0bb9);
+            
+        
+
+        marker_a0549ca38385266be9a524a103325a33.bindPopup(popup_89224b70343c813fe64b53a6e97be347)
+        ;
+
+        
+    
+    
+            var marker_f451170c0fbad8c0c8217e32a4418026 = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_4e896843927dac5f59a40594b12e51d7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f451170c0fbad8c0c8217e32a4418026.setIcon(icon_4e896843927dac5f59a40594b12e51d7);
+        
+    
+        var popup_b6ba9770bec90bbf8ab9c95e2b8b23f7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ce691454e8aa1b81f145f3c4511afab4 = $(`<div id="html_ce691454e8aa1b81f145f3c4511afab4" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 3086</div>`)[0];
+                popup_b6ba9770bec90bbf8ab9c95e2b8b23f7.setContent(html_ce691454e8aa1b81f145f3c4511afab4);
+            
+        
+
+        marker_f451170c0fbad8c0c8217e32a4418026.bindPopup(popup_b6ba9770bec90bbf8ab9c95e2b8b23f7)
+        ;
+
+        
+    
+    
+            var marker_54f0924f67d85eba314fe6136f42a0a2 = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_50ab711698b86563ad9e1f08a8b69f86 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_54f0924f67d85eba314fe6136f42a0a2.setIcon(icon_50ab711698b86563ad9e1f08a8b69f86);
+        
+    
+        var popup_385625a8bd8265290736336aa8992f9e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ff9f7831fd9d71cf614842b6d546bdf8 = $(`<div id="html_ff9f7831fd9d71cf614842b6d546bdf8" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 3305</div>`)[0];
+                popup_385625a8bd8265290736336aa8992f9e.setContent(html_ff9f7831fd9d71cf614842b6d546bdf8);
+            
+        
+
+        marker_54f0924f67d85eba314fe6136f42a0a2.bindPopup(popup_385625a8bd8265290736336aa8992f9e)
+        ;
+
+        
+    
+    
+            var marker_0aa08109b36f3e6012a69ef2c95c41ba = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_0a6dd44768443b23e00e1e9b0ee4c49d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0aa08109b36f3e6012a69ef2c95c41ba.setIcon(icon_0a6dd44768443b23e00e1e9b0ee4c49d);
+        
+    
+        var popup_c043279f0a1814a8da501848874222a8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4e08b0bebdaf3ef8e42f67be51efe421 = $(`<div id="html_4e08b0bebdaf3ef8e42f67be51efe421" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 6729</div>`)[0];
+                popup_c043279f0a1814a8da501848874222a8.setContent(html_4e08b0bebdaf3ef8e42f67be51efe421);
+            
+        
+
+        marker_0aa08109b36f3e6012a69ef2c95c41ba.bindPopup(popup_c043279f0a1814a8da501848874222a8)
+        ;
+
+        
+    
+    
+            var marker_6d82cdcbeb04ee85d632f1b46434d5e7 = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_815cb005c1b2fd8f8590dec7f0d47abb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6d82cdcbeb04ee85d632f1b46434d5e7.setIcon(icon_815cb005c1b2fd8f8590dec7f0d47abb);
+        
+    
+        var popup_b6c77a6487136719e1dc37410fd8e183 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_41f87290cd0e4d4294629369f2d3a0d2 = $(`<div id="html_41f87290cd0e4d4294629369f2d3a0d2" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 6456</div>`)[0];
+                popup_b6c77a6487136719e1dc37410fd8e183.setContent(html_41f87290cd0e4d4294629369f2d3a0d2);
+            
+        
+
+        marker_6d82cdcbeb04ee85d632f1b46434d5e7.bindPopup(popup_b6c77a6487136719e1dc37410fd8e183)
+        ;
+
+        
+    
+    
+            var marker_5348d43f421b7d3aedd6add267673058 = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_1888d2e29f17145ed3422c13cb325931 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5348d43f421b7d3aedd6add267673058.setIcon(icon_1888d2e29f17145ed3422c13cb325931);
+        
+    
+        var popup_f6e0f843f936642fc28cf87bbe701a5a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_52bd49136bf5e284e666227718e49cc3 = $(`<div id="html_52bd49136bf5e284e666227718e49cc3" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 1295</div>`)[0];
+                popup_f6e0f843f936642fc28cf87bbe701a5a.setContent(html_52bd49136bf5e284e666227718e49cc3);
+            
+        
+
+        marker_5348d43f421b7d3aedd6add267673058.bindPopup(popup_f6e0f843f936642fc28cf87bbe701a5a)
+        ;
+
+        
+    
+    
+            var marker_0bdfd9b338fbda2cde83ca75a5b59930 = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_1c53c410f0432c77550f7585af385ee4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0bdfd9b338fbda2cde83ca75a5b59930.setIcon(icon_1c53c410f0432c77550f7585af385ee4);
+        
+    
+        var popup_c8fd8be6d86756f4c1bb516988e5cfbd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5e5f4052d53859abff227ccda3a550ab = $(`<div id="html_5e5f4052d53859abff227ccda3a550ab" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 4355</div>`)[0];
+                popup_c8fd8be6d86756f4c1bb516988e5cfbd.setContent(html_5e5f4052d53859abff227ccda3a550ab);
+            
+        
+
+        marker_0bdfd9b338fbda2cde83ca75a5b59930.bindPopup(popup_c8fd8be6d86756f4c1bb516988e5cfbd)
+        ;
+
+        
+    
+    
+            var marker_122bb184ceac0016bd64a557dd3cc72e = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_e548b6a13470436fd91445ef0ff914b1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_122bb184ceac0016bd64a557dd3cc72e.setIcon(icon_e548b6a13470436fd91445ef0ff914b1);
+        
+    
+        var popup_44ee1f8c4fff98d6adf5be4c2280e672 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8485180171112286ff37c8233bd00a56 = $(`<div id="html_8485180171112286ff37c8233bd00a56" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 4609</div>`)[0];
+                popup_44ee1f8c4fff98d6adf5be4c2280e672.setContent(html_8485180171112286ff37c8233bd00a56);
+            
+        
+
+        marker_122bb184ceac0016bd64a557dd3cc72e.bindPopup(popup_44ee1f8c4fff98d6adf5be4c2280e672)
+        ;
+
+        
+    
+    
+            var marker_4e4af95b6033ef1ba18182ab8a4b7c53 = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_8415156bbcce10b0ea3ddf7cc44c5984 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4e4af95b6033ef1ba18182ab8a4b7c53.setIcon(icon_8415156bbcce10b0ea3ddf7cc44c5984);
+        
+    
+        var popup_104fd1389cf92d712fa9eaa9ec082cf0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4556f012dbdcdf74f898a889ea8227fe = $(`<div id="html_4556f012dbdcdf74f898a889ea8227fe" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 2845</div>`)[0];
+                popup_104fd1389cf92d712fa9eaa9ec082cf0.setContent(html_4556f012dbdcdf74f898a889ea8227fe);
+            
+        
+
+        marker_4e4af95b6033ef1ba18182ab8a4b7c53.bindPopup(popup_104fd1389cf92d712fa9eaa9ec082cf0)
+        ;
+
+        
+    
+    
+            var marker_a3f84284a71b0ed6504c7d6deebbc1d4 = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_fce3242851e4796153c9394ed9adc6df = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a3f84284a71b0ed6504c7d6deebbc1d4.setIcon(icon_fce3242851e4796153c9394ed9adc6df);
+        
+    
+        var popup_8a80938513875e4f572fc3939242f284 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_26e47e4d7ecddcf24848d0e636047731 = $(`<div id="html_26e47e4d7ecddcf24848d0e636047731" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 2736</div>`)[0];
+                popup_8a80938513875e4f572fc3939242f284.setContent(html_26e47e4d7ecddcf24848d0e636047731);
+            
+        
+
+        marker_a3f84284a71b0ed6504c7d6deebbc1d4.bindPopup(popup_8a80938513875e4f572fc3939242f284)
+        ;
+
+        
+    
+    
+            var marker_0943678deb540255c91142bac615cf46 = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_a48bbb94eb947960ec3a2f95bfd59bd9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0943678deb540255c91142bac615cf46.setIcon(icon_a48bbb94eb947960ec3a2f95bfd59bd9);
+        
+    
+        var popup_901b33f304afee4656feeb1aeaa63574 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3e322a8ef58e3de1b5d0f3dba09b49d9 = $(`<div id="html_3e322a8ef58e3de1b5d0f3dba09b49d9" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 4086</div>`)[0];
+                popup_901b33f304afee4656feeb1aeaa63574.setContent(html_3e322a8ef58e3de1b5d0f3dba09b49d9);
+            
+        
+
+        marker_0943678deb540255c91142bac615cf46.bindPopup(popup_901b33f304afee4656feeb1aeaa63574)
+        ;
+
+        
+    
+    
+            var marker_82fdcbd1051c3b8082f058335a811ac5 = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_c5453f7c7253719adc90c0a46a12cb77 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_82fdcbd1051c3b8082f058335a811ac5.setIcon(icon_c5453f7c7253719adc90c0a46a12cb77);
+        
+    
+        var popup_70121d6e9a758e09dbc9683b762efda7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c3ff00f606225f46ecbd673bb4a35eaa = $(`<div id="html_c3ff00f606225f46ecbd673bb4a35eaa" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 2632</div>`)[0];
+                popup_70121d6e9a758e09dbc9683b762efda7.setContent(html_c3ff00f606225f46ecbd673bb4a35eaa);
+            
+        
+
+        marker_82fdcbd1051c3b8082f058335a811ac5.bindPopup(popup_70121d6e9a758e09dbc9683b762efda7)
+        ;
+
+        
+    
+    
+            var marker_2fd35aa58e3721239a309ec1d253c916 = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_8e3e2980664ae0ee42dad1b158c2d3df = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2fd35aa58e3721239a309ec1d253c916.setIcon(icon_8e3e2980664ae0ee42dad1b158c2d3df);
+        
+    
+        var popup_1e3a30cb560a1be9e3f829c8c133ecd4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8700395cdb4867853adf4b63691bd871 = $(`<div id="html_8700395cdb4867853adf4b63691bd871" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 5658</div>`)[0];
+                popup_1e3a30cb560a1be9e3f829c8c133ecd4.setContent(html_8700395cdb4867853adf4b63691bd871);
+            
+        
+
+        marker_2fd35aa58e3721239a309ec1d253c916.bindPopup(popup_1e3a30cb560a1be9e3f829c8c133ecd4)
+        ;
+
+        
+    
+    
+            var marker_e868cebe380f8d49f5d094ae6d66adb5 = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_acbd838155d32652935c998fa1ad4766 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e868cebe380f8d49f5d094ae6d66adb5.setIcon(icon_acbd838155d32652935c998fa1ad4766);
+        
+    
+        var popup_3a3bf20b22d6832f6206cf9b1d81e635 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1b64a6b60b5206c17c9809329c0629f1 = $(`<div id="html_1b64a6b60b5206c17c9809329c0629f1" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 4408</div>`)[0];
+                popup_3a3bf20b22d6832f6206cf9b1d81e635.setContent(html_1b64a6b60b5206c17c9809329c0629f1);
+            
+        
+
+        marker_e868cebe380f8d49f5d094ae6d66adb5.bindPopup(popup_3a3bf20b22d6832f6206cf9b1d81e635)
+        ;
+
+        
+    
+    
+            var marker_a184c3718b267307ca12f5a50c5c9faf = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_56e42ba6fb08acecf9d07f14ec498fdf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a184c3718b267307ca12f5a50c5c9faf.setIcon(icon_56e42ba6fb08acecf9d07f14ec498fdf);
+        
+    
+        var popup_977aed40dea336d5c069d97a5daf3f26 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6081fd3af99b9d958e5d110a5be2f3e5 = $(`<div id="html_6081fd3af99b9d958e5d110a5be2f3e5" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 2608</div>`)[0];
+                popup_977aed40dea336d5c069d97a5daf3f26.setContent(html_6081fd3af99b9d958e5d110a5be2f3e5);
+            
+        
+
+        marker_a184c3718b267307ca12f5a50c5c9faf.bindPopup(popup_977aed40dea336d5c069d97a5daf3f26)
+        ;
+
+        
+    
+    
+            var marker_4c8a54450509492a542371a24d654cfe = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_d8aab4febbd3786cfa2455c9f3865e60 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4c8a54450509492a542371a24d654cfe.setIcon(icon_d8aab4febbd3786cfa2455c9f3865e60);
+        
+    
+        var popup_ecb78db5fcecb18d2f2fc0171c77aef1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_188d3a44fe037758b045c7253e86f36e = $(`<div id="html_188d3a44fe037758b045c7253e86f36e" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 5173</div>`)[0];
+                popup_ecb78db5fcecb18d2f2fc0171c77aef1.setContent(html_188d3a44fe037758b045c7253e86f36e);
+            
+        
+
+        marker_4c8a54450509492a542371a24d654cfe.bindPopup(popup_ecb78db5fcecb18d2f2fc0171c77aef1)
+        ;
+
+        
+    
+    
+            var marker_2fe49891c488ceed607cb3f8d378b1b9 = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_7e00acd5194e44c5fb46d02b4c062f21 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2fe49891c488ceed607cb3f8d378b1b9.setIcon(icon_7e00acd5194e44c5fb46d02b4c062f21);
+        
+    
+        var popup_441b496bac233d2fbca74fdacc47115f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a508dfc08ba22f24cdaa354423c37b6c = $(`<div id="html_a508dfc08ba22f24cdaa354423c37b6c" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 1829</div>`)[0];
+                popup_441b496bac233d2fbca74fdacc47115f.setContent(html_a508dfc08ba22f24cdaa354423c37b6c);
+            
+        
+
+        marker_2fe49891c488ceed607cb3f8d378b1b9.bindPopup(popup_441b496bac233d2fbca74fdacc47115f)
+        ;
+
+        
+    
+    
+            var marker_57fc83259bc30c103be1f124759ae082 = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_9d2b589965422844879deb196510123c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_57fc83259bc30c103be1f124759ae082.setIcon(icon_9d2b589965422844879deb196510123c);
+        
+    
+        var popup_519535379793ea7fcc531ba13de26583 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_77145c791ae011881ecd7e0cfd910bd7 = $(`<div id="html_77145c791ae011881ecd7e0cfd910bd7" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 2541</div>`)[0];
+                popup_519535379793ea7fcc531ba13de26583.setContent(html_77145c791ae011881ecd7e0cfd910bd7);
+            
+        
+
+        marker_57fc83259bc30c103be1f124759ae082.bindPopup(popup_519535379793ea7fcc531ba13de26583)
+        ;
+
+        
+    
+    
+            var marker_dd5471cd4610508ec3a5c5af0ca14a24 = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_35389e5c9670118ca2de7f92a2029a93 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_dd5471cd4610508ec3a5c5af0ca14a24.setIcon(icon_35389e5c9670118ca2de7f92a2029a93);
+        
+    
+        var popup_305d6d242f4db3c6ed5b2133e53e4f44 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0af2e0ff59625b56e9af710ab6d76ee2 = $(`<div id="html_0af2e0ff59625b56e9af710ab6d76ee2" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 4396</div>`)[0];
+                popup_305d6d242f4db3c6ed5b2133e53e4f44.setContent(html_0af2e0ff59625b56e9af710ab6d76ee2);
+            
+        
+
+        marker_dd5471cd4610508ec3a5c5af0ca14a24.bindPopup(popup_305d6d242f4db3c6ed5b2133e53e4f44)
+        ;
+
+        
+    
+    
+            var marker_a734fe2d4ea68a0d3774a461801fc1cd = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_3e20aa61860952e9b369f583ae54e10b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a734fe2d4ea68a0d3774a461801fc1cd.setIcon(icon_3e20aa61860952e9b369f583ae54e10b);
+        
+    
+        var popup_fbe9217bea6bbb991e9b72f97991b5a8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7fef3372e82da2fe071617758b21c852 = $(`<div id="html_7fef3372e82da2fe071617758b21c852" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 3274</div>`)[0];
+                popup_fbe9217bea6bbb991e9b72f97991b5a8.setContent(html_7fef3372e82da2fe071617758b21c852);
+            
+        
+
+        marker_a734fe2d4ea68a0d3774a461801fc1cd.bindPopup(popup_fbe9217bea6bbb991e9b72f97991b5a8)
+        ;
+
+        
+    
+    
+            var marker_742321417439ea6f90f9ed67c63b54b9 = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_e91ef0499aec65e1ebd6a5cf4c9d675e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_742321417439ea6f90f9ed67c63b54b9.setIcon(icon_e91ef0499aec65e1ebd6a5cf4c9d675e);
+        
+    
+        var popup_01937e77bf0584ec024a6f260747e8ba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a302ef58d7162d02e8b627fa835464e1 = $(`<div id="html_a302ef58d7162d02e8b627fa835464e1" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 4704</div>`)[0];
+                popup_01937e77bf0584ec024a6f260747e8ba.setContent(html_a302ef58d7162d02e8b627fa835464e1);
+            
+        
+
+        marker_742321417439ea6f90f9ed67c63b54b9.bindPopup(popup_01937e77bf0584ec024a6f260747e8ba)
+        ;
+
+        
+    
+    
+            var marker_c4d5ce5447c44022222f6d807d73d5f8 = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_ce7ebae4c77660ec9552c6cd6e5a432f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c4d5ce5447c44022222f6d807d73d5f8.setIcon(icon_ce7ebae4c77660ec9552c6cd6e5a432f);
+        
+    
+        var popup_5bb715466632521481cb7a489bde749f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4529337f82384323b1efe972754eacf7 = $(`<div id="html_4529337f82384323b1efe972754eacf7" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 4553</div>`)[0];
+                popup_5bb715466632521481cb7a489bde749f.setContent(html_4529337f82384323b1efe972754eacf7);
+            
+        
+
+        marker_c4d5ce5447c44022222f6d807d73d5f8.bindPopup(popup_5bb715466632521481cb7a489bde749f)
+        ;
+
+        
+    
+    
+            var marker_28ae52484f351c32519750f025b180a2 = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_debb1fb937615637366a1680ac4a296c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_28ae52484f351c32519750f025b180a2.setIcon(icon_debb1fb937615637366a1680ac4a296c);
+        
+    
+        var popup_e7909978dadc694a18889ba361c3aa81 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3eebbe666f96b40b38b10e7c901ff630 = $(`<div id="html_3eebbe666f96b40b38b10e7c901ff630" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 4969</div>`)[0];
+                popup_e7909978dadc694a18889ba361c3aa81.setContent(html_3eebbe666f96b40b38b10e7c901ff630);
+            
+        
+
+        marker_28ae52484f351c32519750f025b180a2.bindPopup(popup_e7909978dadc694a18889ba361c3aa81)
+        ;
+
+        
+    
+    
+            var marker_448c4d1713163c749bc31683c0bb55df = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_51feb7abeda4747bc3daab3ce4cabd41 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_448c4d1713163c749bc31683c0bb55df.setIcon(icon_51feb7abeda4747bc3daab3ce4cabd41);
+        
+    
+        var popup_6ee615aa6fe6608c7d51758ae213a405 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7f061f3310f7b007b91f9432cfaeed9b = $(`<div id="html_7f061f3310f7b007b91f9432cfaeed9b" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 3621</div>`)[0];
+                popup_6ee615aa6fe6608c7d51758ae213a405.setContent(html_7f061f3310f7b007b91f9432cfaeed9b);
+            
+        
+
+        marker_448c4d1713163c749bc31683c0bb55df.bindPopup(popup_6ee615aa6fe6608c7d51758ae213a405)
+        ;
+
+        
+    
+    
+            var marker_6e7b3ebe293511d74d291617078b4f0a = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_a0084914a11b2d66b6ac05be3d25883c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6e7b3ebe293511d74d291617078b4f0a.setIcon(icon_a0084914a11b2d66b6ac05be3d25883c);
+        
+    
+        var popup_2c32315879ba3fde8b794949afa2b5d9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_051bccb2e31de72f4e6eabbe0f058c76 = $(`<div id="html_051bccb2e31de72f4e6eabbe0f058c76" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 1451</div>`)[0];
+                popup_2c32315879ba3fde8b794949afa2b5d9.setContent(html_051bccb2e31de72f4e6eabbe0f058c76);
+            
+        
+
+        marker_6e7b3ebe293511d74d291617078b4f0a.bindPopup(popup_2c32315879ba3fde8b794949afa2b5d9)
+        ;
+
+        
+    
+    
+            var marker_6c1ec4168fdbb7c41ab1f6175edaa385 = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_670bee28b1a09f48215fb1bd3caa85ae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6c1ec4168fdbb7c41ab1f6175edaa385.setIcon(icon_670bee28b1a09f48215fb1bd3caa85ae);
+        
+    
+        var popup_827d35e529c9c4bb91544dc647a15136 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cdd6d9086b7f32cf003c9844ab0daf39 = $(`<div id="html_cdd6d9086b7f32cf003c9844ab0daf39" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 3487</div>`)[0];
+                popup_827d35e529c9c4bb91544dc647a15136.setContent(html_cdd6d9086b7f32cf003c9844ab0daf39);
+            
+        
+
+        marker_6c1ec4168fdbb7c41ab1f6175edaa385.bindPopup(popup_827d35e529c9c4bb91544dc647a15136)
+        ;
+
+        
+    
+    
+            var marker_643f6cf22345ffeeeed6ade2df105b36 = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_24c9dd54dde928b24afcb71080d7bc4f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_643f6cf22345ffeeeed6ade2df105b36.setIcon(icon_24c9dd54dde928b24afcb71080d7bc4f);
+        
+    
+        var popup_404b7a52d09b6e527abe8e9a8c6c4afc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_42d30c59b903f1b0cee2e102d7b1958b = $(`<div id="html_42d30c59b903f1b0cee2e102d7b1958b" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 2638</div>`)[0];
+                popup_404b7a52d09b6e527abe8e9a8c6c4afc.setContent(html_42d30c59b903f1b0cee2e102d7b1958b);
+            
+        
+
+        marker_643f6cf22345ffeeeed6ade2df105b36.bindPopup(popup_404b7a52d09b6e527abe8e9a8c6c4afc)
+        ;
+
+        
+    
+    
+            var marker_2520019114cc28017768c812be4a8115 = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_e7854cfc182f6ece6d1a814db93a6399 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2520019114cc28017768c812be4a8115.setIcon(icon_e7854cfc182f6ece6d1a814db93a6399);
+        
+    
+        var popup_b04f8cd93f400ea788a54c0b3d13ae9d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a318350f16761be97057b99761e27ce4 = $(`<div id="html_a318350f16761be97057b99761e27ce4" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 6654</div>`)[0];
+                popup_b04f8cd93f400ea788a54c0b3d13ae9d.setContent(html_a318350f16761be97057b99761e27ce4);
+            
+        
+
+        marker_2520019114cc28017768c812be4a8115.bindPopup(popup_b04f8cd93f400ea788a54c0b3d13ae9d)
+        ;
+
+        
+    
+    
+            var marker_b4a94e2faf8e8bdf30723941881499f2 = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_786abe858cde3f50224a0851ce45f870 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b4a94e2faf8e8bdf30723941881499f2.setIcon(icon_786abe858cde3f50224a0851ce45f870);
+        
+    
+        var popup_46331b32910f95bd308fcde8008546b1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dce7691a4c32b60b4652b1bc6e8edbd3 = $(`<div id="html_dce7691a4c32b60b4652b1bc6e8edbd3" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 5311</div>`)[0];
+                popup_46331b32910f95bd308fcde8008546b1.setContent(html_dce7691a4c32b60b4652b1bc6e8edbd3);
+            
+        
+
+        marker_b4a94e2faf8e8bdf30723941881499f2.bindPopup(popup_46331b32910f95bd308fcde8008546b1)
+        ;
+
+        
+    
+    
+            var marker_cef61d3e8a6d681a5bea4f295140bd3d = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_48d06693f580df2f8fd602506a48136b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_cef61d3e8a6d681a5bea4f295140bd3d.setIcon(icon_48d06693f580df2f8fd602506a48136b);
+        
+    
+        var popup_adc6a66c68e1065360ac6d8a44b56868 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5d8ec19ffbd70bda0e2646b1e35a5ca9 = $(`<div id="html_5d8ec19ffbd70bda0e2646b1e35a5ca9" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 4258</div>`)[0];
+                popup_adc6a66c68e1065360ac6d8a44b56868.setContent(html_5d8ec19ffbd70bda0e2646b1e35a5ca9);
+            
+        
+
+        marker_cef61d3e8a6d681a5bea4f295140bd3d.bindPopup(popup_adc6a66c68e1065360ac6d8a44b56868)
+        ;
+
+        
+    
+    
+            var marker_67d0a3213341ab3e2eb7c29d31232470 = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_5814c0530bce80eb06861c2e8d1338fd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_67d0a3213341ab3e2eb7c29d31232470.setIcon(icon_5814c0530bce80eb06861c2e8d1338fd);
+        
+    
+        var popup_7f3f73d5e02a3c9d3030a5e85883ee29 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_304be156cc5f3e6f3804076d2cf25619 = $(`<div id="html_304be156cc5f3e6f3804076d2cf25619" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 89</div>`)[0];
+                popup_7f3f73d5e02a3c9d3030a5e85883ee29.setContent(html_304be156cc5f3e6f3804076d2cf25619);
+            
+        
+
+        marker_67d0a3213341ab3e2eb7c29d31232470.bindPopup(popup_7f3f73d5e02a3c9d3030a5e85883ee29)
+        ;
+
+        
+    
+    
+            var marker_aefc1ecdaa4735db3de473a3b86eb3ec = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_ab087690e4261ed0c39bc9207395e0b9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_aefc1ecdaa4735db3de473a3b86eb3ec.setIcon(icon_ab087690e4261ed0c39bc9207395e0b9);
+        
+    
+        var popup_dde6c9add28e13fd6569f2e1403cb17a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3fbd13c83dcc6a6383ba430d78c12916 = $(`<div id="html_3fbd13c83dcc6a6383ba430d78c12916" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 2610</div>`)[0];
+                popup_dde6c9add28e13fd6569f2e1403cb17a.setContent(html_3fbd13c83dcc6a6383ba430d78c12916);
+            
+        
+
+        marker_aefc1ecdaa4735db3de473a3b86eb3ec.bindPopup(popup_dde6c9add28e13fd6569f2e1403cb17a)
+        ;
+
+        
+    
+    
+            var marker_259d84a19c93863e68404811ac4d04c0 = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_82af2a77337e354a74d547b8fb08b11c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_259d84a19c93863e68404811ac4d04c0.setIcon(icon_82af2a77337e354a74d547b8fb08b11c);
+        
+    
+        var popup_476b95143263aa183261c9a179503ee3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b50bbf48a8f56b129d0ce3e583bc44bb = $(`<div id="html_b50bbf48a8f56b129d0ce3e583bc44bb" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 3365</div>`)[0];
+                popup_476b95143263aa183261c9a179503ee3.setContent(html_b50bbf48a8f56b129d0ce3e583bc44bb);
+            
+        
+
+        marker_259d84a19c93863e68404811ac4d04c0.bindPopup(popup_476b95143263aa183261c9a179503ee3)
+        ;
+
+        
+    
+    
+            var marker_dfd2b2413b4249ca703b3c452d893b36 = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_369bda8cd0c3f0e291b26b44ced137c5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_dfd2b2413b4249ca703b3c452d893b36.setIcon(icon_369bda8cd0c3f0e291b26b44ced137c5);
+        
+    
+        var popup_698450e956e0c2dd1c7cdfaa1368155f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c1838ef21a90b7c9a28373d6fb6306d6 = $(`<div id="html_c1838ef21a90b7c9a28373d6fb6306d6" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 5275</div>`)[0];
+                popup_698450e956e0c2dd1c7cdfaa1368155f.setContent(html_c1838ef21a90b7c9a28373d6fb6306d6);
+            
+        
+
+        marker_dfd2b2413b4249ca703b3c452d893b36.bindPopup(popup_698450e956e0c2dd1c7cdfaa1368155f)
+        ;
+
+        
+    
+    
+            var marker_78616fca2440215bbb95ed7000a6b2f9 = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_f074d38a2c5305fb778b5bf8bd31eb95 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_78616fca2440215bbb95ed7000a6b2f9.setIcon(icon_f074d38a2c5305fb778b5bf8bd31eb95);
+        
+    
+        var popup_115444f858605229a64d2381118856b9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_34a0e7839bda3bac085e8495eec3f982 = $(`<div id="html_34a0e7839bda3bac085e8495eec3f982" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 4406</div>`)[0];
+                popup_115444f858605229a64d2381118856b9.setContent(html_34a0e7839bda3bac085e8495eec3f982);
+            
+        
+
+        marker_78616fca2440215bbb95ed7000a6b2f9.bindPopup(popup_115444f858605229a64d2381118856b9)
+        ;
+
+        
+    
+    
+            var marker_5084533f26b82b4eac1817f63ef1aa68 = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_26c38bde8772868e4496fb8bf06e7b43 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5084533f26b82b4eac1817f63ef1aa68.setIcon(icon_26c38bde8772868e4496fb8bf06e7b43);
+        
+    
+        var popup_de219479d2b3e2432e66b92f68cfeeb9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e1a16a26987aab22b80dfbc3b9505d34 = $(`<div id="html_e1a16a26987aab22b80dfbc3b9505d34" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 4267</div>`)[0];
+                popup_de219479d2b3e2432e66b92f68cfeeb9.setContent(html_e1a16a26987aab22b80dfbc3b9505d34);
+            
+        
+
+        marker_5084533f26b82b4eac1817f63ef1aa68.bindPopup(popup_de219479d2b3e2432e66b92f68cfeeb9)
+        ;
+
+        
+    
+    
+            var marker_447cf4acd077e4ef4bbcb27787b7639c = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_facc16d8ba89c8d51d916a6f67cb8f6f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_447cf4acd077e4ef4bbcb27787b7639c.setIcon(icon_facc16d8ba89c8d51d916a6f67cb8f6f);
+        
+    
+        var popup_1ac973590a72af4a9273e12a648eda16 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f61ac4f4f5f1a1ef1794628c7cf27a8d = $(`<div id="html_f61ac4f4f5f1a1ef1794628c7cf27a8d" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 4692</div>`)[0];
+                popup_1ac973590a72af4a9273e12a648eda16.setContent(html_f61ac4f4f5f1a1ef1794628c7cf27a8d);
+            
+        
+
+        marker_447cf4acd077e4ef4bbcb27787b7639c.bindPopup(popup_1ac973590a72af4a9273e12a648eda16)
+        ;
+
+        
+    
+    
+            var marker_82f11d1e3105839f73368ac146ff1664 = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_fb1c26fdd31643fd04d0d2c5605dbd7c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_82f11d1e3105839f73368ac146ff1664.setIcon(icon_fb1c26fdd31643fd04d0d2c5605dbd7c);
+        
+    
+        var popup_430f3cc48136ee6254ec5f542d202d3d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2cb69412778ab0916c4b13c77bb99744 = $(`<div id="html_2cb69412778ab0916c4b13c77bb99744" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 4212</div>`)[0];
+                popup_430f3cc48136ee6254ec5f542d202d3d.setContent(html_2cb69412778ab0916c4b13c77bb99744);
+            
+        
+
+        marker_82f11d1e3105839f73368ac146ff1664.bindPopup(popup_430f3cc48136ee6254ec5f542d202d3d)
+        ;
+
+        
+    
+    
+            var marker_ce8ae524a18adea21c3fd29ffb330fdb = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_5cda41d15929706ea0bc70b4a8c6e97e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ce8ae524a18adea21c3fd29ffb330fdb.setIcon(icon_5cda41d15929706ea0bc70b4a8c6e97e);
+        
+    
+        var popup_979278d85280966900627c1223d642ad = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_994652650459dd3a5498424d5be98a20 = $(`<div id="html_994652650459dd3a5498424d5be98a20" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 2701</div>`)[0];
+                popup_979278d85280966900627c1223d642ad.setContent(html_994652650459dd3a5498424d5be98a20);
+            
+        
+
+        marker_ce8ae524a18adea21c3fd29ffb330fdb.bindPopup(popup_979278d85280966900627c1223d642ad)
+        ;
+
+        
+    
+    
+            var marker_ba61aff42934174a9db90c8007face5d = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_61b9d2aca67a19b7cde560733cd80358 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ba61aff42934174a9db90c8007face5d.setIcon(icon_61b9d2aca67a19b7cde560733cd80358);
+        
+    
+        var popup_2e065bb73e9bf1f08ebee50e98065e08 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a3e53ff5f5cf54e746476153dcfb26e0 = $(`<div id="html_a3e53ff5f5cf54e746476153dcfb26e0" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 731</div>`)[0];
+                popup_2e065bb73e9bf1f08ebee50e98065e08.setContent(html_a3e53ff5f5cf54e746476153dcfb26e0);
+            
+        
+
+        marker_ba61aff42934174a9db90c8007face5d.bindPopup(popup_2e065bb73e9bf1f08ebee50e98065e08)
+        ;
+
+        
+    
+    
+            var marker_1d8fb3cf36cb3f05337f808c45d9a8f6 = L.marker(
+                [42.618, -82.531],
+                {}
+            ).addTo(marker_cluster_94eb16ce65571582a8f19870b6f8ae95);
+        
+    
+            var icon_75de5c595917bb949128a457b6837c70 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1d8fb3cf36cb3f05337f808c45d9a8f6.setIcon(icon_75de5c595917bb949128a457b6837c70);
+        
+    
+        var popup_bae2cc5bddc1e449783a257d3c1c4cb0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4802951a0e14f0ba48691e2577753d83 = $(`<div id="html_4802951a0e14f0ba48691e2577753d83" style="width: 100.0%; height: 100.0%;">Port: Algonac<br>State: Michigan<br>Traffic Volume: 24</div>`)[0];
+                popup_bae2cc5bddc1e449783a257d3c1c4cb0.setContent(html_4802951a0e14f0ba48691e2577753d83);
+            
+        
+
+        marker_1d8fb3cf36cb3f05337f808c45d9a8f6.bindPopup(popup_bae2cc5bddc1e449783a257d3c1c4cb0)
+        ;
+
+        
+    
+    
+            marker_cluster_94eb16ce65571582a8f19870b6f8ae95.addTo(map_45fe87b94d69f74fdc1899746d2ebb3f);
+        
+</script>
+</html>
