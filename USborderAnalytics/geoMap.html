@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GeoMap Example</title>
+    <!-- Include Google Maps API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+    <style>
+        /* Style to set the map container size */
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>GeoMap Example</h1>
+    <!-- Map container -->
+    <div id="map"></div>
+
+    <script>
+        // Initialize and display the map
+        function initMap() {
+            // Coordinates to center the map
+            var myLatLng = {lat: 40.7128, lng: -74.0060};
+
+            // Create a map object and specify the DOM element for display.
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: myLatLng,
+                zoom: 8 // Zoom level
+            });
+
+            // Marker to mark a specific location on the map
+            var marker = new google.maps.Marker({
+                position: myLatLng,
+                map: map,
+                title: 'New York City' // Marker title
+            });
+        }
+    </script>
+
+    <!-- Call the initMap function after the Google Maps API is loaded -->
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+    </script>
+</body>
+</html>
